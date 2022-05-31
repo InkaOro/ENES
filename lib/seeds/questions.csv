@@ -1,7 +1,7 @@
-id,topic_id,question_content,type,exam_paper_year,exam_paper_link,Subject ID
-1,1,"A aquisição de um automóvel e a constituição de um depósito a prazo pela família A são exemplos
+id,question_content,type,exam_paper_year,exam_paper_link,Subject ID
+1,"A aquisição de um automóvel e a constituição de um depósito a prazo pela família A são exemplos
 de atividades económicas designadas por",timed,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
-2,2,"No estudo da integração económica, as diversas formas de integração, a seguir mencionadas, representam
+2,"No estudo da integração económica, as diversas formas de integração, a seguir mencionadas, representam
 diferentes graus de aprofundamento.
 
 I. Zona de comércio livre
@@ -12,9 +12,9 @@ V. União aduaneira
 
 Selecione a opção que corresponde à ordenação das formas de integração económica por ordem crescente
 de aprofundamento.",timed,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
-3,3,"De acordo com a contabilidade nacional, a diferença entre rendimento nacional bruto, calculado a preços
+3,"De acordo com a contabilidade nacional, a diferença entre rendimento nacional bruto, calculado a preços
 correntes, e rendimento nacional líquido, calculado a preços correntes, corresponde ao valor",timed,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
-4,4,"Considere as seguintes afirmações, relativas aos diversos tipos de investimento, num determinado país.
+4,"Considere as seguintes afirmações, relativas aos diversos tipos de investimento, num determinado país.
 
 I.  Uma empresa adquiriu novas máquinas destinadas à linha de produção de um novo bem.
 II. Uma empresa participou no aumento de capital social de outra empresa através da compra de novas
@@ -23,46 +23,46 @@ III.  Uma empresa, com o objetivo de aumentar a produtividade do trabalho, adq
 equipamentos de telecomunicações.
 
 É correto afirmar que, no contexto deste país, as afirmações",timed,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
-5,5,"A desvalorização da moeda do país A relativamente à moeda do país B provoca o aumento do número
+5,"A desvalorização da moeda do país A relativamente à moeda do país B provoca o aumento do número
 de unidades monetárias do país A que é possível adquirir com uma unidade monetária do país B. Assim,
 considerando-se tudo o resto constante, podemos afirmar que ocorre, como efeito de curto prazo, no
 mercado interno do país B,",timed,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
-6,6,Uma das competências do Banco Central Europeu (BCE) consiste em definir,timed,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
-7,7,"Numa dada economia, uma empresa privada de transporte rodoviário de passageiros decidiu despender
+6,Uma das competências do Banco Central Europeu (BCE) consiste em definir,timed,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
+7,"Numa dada economia, uma empresa privada de transporte rodoviário de passageiros decidiu despender
 100 milhões de euros na compra de novos autocarros, com o objetivo de retirar de circulação os veículos
 degradados, proporcionando uma melhoria da qualidade do serviço prestado.
 
 Para a empresa, a aquisição dos novos autocarros constitui um exemplo de",timed,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
-8,8,"Num mercado de concorrência monopolística, um pequeno produtor consegue, no curto prazo, praticar um
+8,"Num mercado de concorrência monopolística, um pequeno produtor consegue, no curto prazo, praticar um
 preço superior ao preço que vigoraria se o mercado fosse de concorrência perfeita.
 
 Esta afirmação é verdadeira, pois, no mercado de concorrência monopolística, ao contrário do que sucede
 no mercado de concorrência perfeita,",timed,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
-9,9,"Uma empresa aumentou a produção, tendo registado, a longo prazo, um aumento de 10% na quantidade
+9,"Uma empresa aumentou a produção, tendo registado, a longo prazo, um aumento de 10% na quantidade
 produzida e uma redução de 18% no custo médio de produção.
 
 Com base na situação descrita, podemos afirmar que a referida empresa obteve",timed,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
-10,10,Constitui exemplo de um fluxo real das empresas não financeiras para as famílias,timed,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
-11,11,"A ausência de uma pauta exterior comum nas transações comerciais de mercadorias entre
+10,Constitui exemplo de um fluxo real das empresas não financeiras para as famílias,timed,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
+11,"A ausência de uma pauta exterior comum nas transações comerciais de mercadorias entre
 Estados-Membros e países terceiros é uma das características da forma de integração económica
 designada por",timed,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
-12,12,"Em 2018, numa economia fechada, existiam apenas duas grandes empresas produtoras de iogurtes
+12,"Em 2018, numa economia fechada, existiam apenas duas grandes empresas produtoras de iogurtes
 (empresa E e empresa F). Nesse ano, a administração da empresa E, com o objetivo de aumentar o lucro
 através do controlo do preço do iogurte, procurou adquirir a empresa F.
 
 Neste contexto, e considerando-se tudo o resto constante, o Estado decidiu inviabilizar essa aquisição.
 Através desta intervenção, o Estado pretendeu promover a eficiência económica,",timed,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
-13,13,"As alterações introduzidas pelo Tratado de Maastricht concederam ao Conselho Europeu o seu estatuto
+13,"As alterações introduzidas pelo Tratado de Maastricht concederam ao Conselho Europeu o seu estatuto
 formal. Este Conselho tem como função principal",timed,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
-14,14,"Considere que o António recebe todos os meses uma nota de 100 euros. Em janeiro, o António, ao utilizar
+14,"Considere que o António recebe todos os meses uma nota de 100 euros. Em janeiro, o António, ao utilizar
 a mesada, optou por comprar um par de ténis, gastando 80 euros, e colocou o valor restante no seu
 mealheiro.
 
 No contexto descrito, podemos afirmar que, quando o António",timed,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
-15,15,"O valor acrescentado criado no processo produtivo representa a remuneração dos fatores de produção
+15,"O valor acrescentado criado no processo produtivo representa a remuneração dos fatores de produção
 intervenientes nesse processo, de acordo com a participação de cada um deles. Assim, pode afirmar-se
 que os rendimentos distribuídos pelos fatores de produção, sob a forma de rendas, juros,",timed,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
-16,16,"Considere as afirmações seguintes, relativas aos destinos (ou às aplicações) da poupança.
+16,"Considere as afirmações seguintes, relativas aos destinos (ou às aplicações) da poupança.
 
 I. As poupanças das famílias tiveram como destino a aquisição de habitação própria.
 II. As poupanças das famílias foram aplicadas na constituição de contas bancárias a prazo.
@@ -71,15 +71,16 @@ duradouros.
 
 No contexto dos destinos (ou das aplicações) da poupança é correto afirmar que, para os agentes
 económicos referidos, as afirmações",timed,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
-17,17,"Uma empresa de capitais alemães, que se dedica à produção de automóveis, dispõe de uma unidade
+17,"Uma empresa de capitais alemães, que se dedica à produção de automóveis, dispõe de uma unidade
 industrial em Portugal desde 1995.
 
 O valor acrescentado bruto criado na produção de automóveis, por esta unidade industrial, em Portugal, é
 contabilizado, pelo sistema de contas nacionais, no produto interno bruto (PIB) português.
 
 Esta afirmação é",timed,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
-18,18,"Em Portugal, os fundos provenientes da União Europeia, no âmbito do Fundo de Coesão, são registados ",timed,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
-19,19,"Uma das características de um bem público é o facto de a sua utilização por mais um consumidor não
+18,"Em Portugal, os fundos provenientes da União Europeia, no âmbito do Fundo de Coesão, são registados ",timed,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
+19,"Uma das características de um bem público é o facto de a sua utilização por mais um consumidor não
 reduzir a quantidade do bem colocada à disposição dos restantes consumidores.
 Com base na característica acima descrita, podemos afirmar que este bem é considerado um bem",timed,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
-20,20,"Compete ao Banco Central Europeu e à Comissão Europeia, respetivamente,",timed,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
+20,"Compete ao Banco Central Europeu e à Comissão Europeia, respetivamente,",timed,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
+21,,,,,

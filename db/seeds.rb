@@ -26,7 +26,7 @@ qtype = %w[main specific optional]
 
 
 CSV.foreach(topic_filepath, headers: :first_row) do |row|
-  subject = Subject.find_or_create(name: row['subject_name'])
+  subject = Subject.find_or_create_by(name: row['subject_name'])
   p subject
   topic = Topic.create!(name: row['name'], subject: subject)
   p topic
