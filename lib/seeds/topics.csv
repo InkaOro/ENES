@@ -1,10 +1,10 @@
-subject_name,name
-Portuguese Second Language,topic a
-German,topic b
-French,topic a
-Spanish,topic b
-English,topic a
-Story A,topic b
-Mathematics A,topic a
-Portuguese,topic b
-Biology and Geology,topic a
+subject_name,topic_name
+Language,Portuguese Second Language
+Language,German
+Language,French
+Language,Spanish
+Language,English
+Language,Story A
+Math,Mathematics A
+Language,Portuguese
+Science,Biology and Geology
