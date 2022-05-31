@@ -1,0 +1,90 @@
+id,question_id,answer_content,Correct?
+1,1,"utilização dos rendimentos, em ambos os casos.",true
+2,1,"consumo e investimento, respetivamente.",false
+3,1,"realização de investimentos, em ambos os casos.",false
+4,1,"capital e poupança, respetivamente.",false
+5,2,I; V; II; III; IV,true
+6,2,I; V; IV; III; II,false
+7,2,IV; I; II; V; III,false
+8,2,IV; I; V; III; II,false
+9,3,"do total de impostos sobre a produção, depois de deduzidos os subsídios de exploração.",true
+10,3,dos subsídios à produção de produtos finais e à importação de matérias-primas.,false
+11,3,do consumo de capital fixo/amortização calculado para o conjunto de uma economia.,false
+12,3,dos consumos intermédios realizados nos vários processos produtivos de bens e serviços.,false
+13,4,I e III se referem ao investimento material; a afirmação II refere-se ao investimento financeiro.,true
+14,4,I e II se referem ao investimento financeiro; a afirmação III refere-se ao investimento imaterial.,false
+15,4,I e II se referem ao investimento material; a afirmação III refere-se ao investimento imaterial.,false
+16,4,I e III se referem ao investimento imaterial; a afirmação II refere-se ao investimento material.,false
+17,5,um aumento do preço e uma redução da quantidade procurada dos bens provenientes do país A.,true
+18,5,uma redução do preço e da quantidade procurada dos bens provenientes do país A.,false
+19,5,um aumento do preço e da quantidade procurada dos bens provenientes do país A.,false
+20,5,uma redução do preço e um aumento da quantidade procurada dos bens provenientes do país A.,false
+21,6,a política fiscal dos países da área do euro.,true
+22,6,a taxa de juro diretora para garantir a estabilidade de preços.,false
+23,6,a política orçamental dos países da área do euro.,false
+24,6,a taxa de atualização salarial para impedir o crescimento de preços.,false
+25,7,"consumo final, e o conjunto dos novos autocarros é considerado uma parcela da formação bruta de
+capital fixo dessa empresa.",true
+26,7,"consumo final, e o conjunto dos novos autocarros é considerado uma parcela da variação de
+existências dessa empresa.",false
+27,7,"investimento material, e o conjunto dos novos autocarros é considerado uma parcela da variação de
+existências dessa empresa.",false
+28,7,"investimento material, e o conjunto dos novos autocarros é considerado uma parcela da formação
+bruta de capital fixo dessa empresa.",false
+29,8,"os poucos produtores suportam custos de produção iguais, ao comercializarem bens diferenciados.",true
+30,8,"os poucos produtores suportam custos de produção iguais, ao comercializarem bens homogéneos.",false
+31,8,"os muitos produtores comercializam bens diferenciados e, por isso, conseguem influenciar o preço de
+venda.",false
+32,8,"os muitos produtores comercializam bens homogéneos e, por isso, conseguem influenciar o preço de
+venda.",false
+33,9,economias de escala.,true
+34,9,rendimentos marginais constantes.,false
+35,9,deseconomias de escala.,false
+36,9,rendimentos marginais decrescentes.,false
+37,10,o serviço de vigilância prestado por uma empresa de segurança privada às famílias.,true
+38,10,o valor pago a uma empresa de segurança privada pelo serviço de vigilância prestado às famílias.,false
+39,10,o valor da utilização do fator trabalho pago às famílias por uma empresa de segurança privada.,false
+40,10,o número de horas de trabalho fornecido pelas famílias a uma empresa de segurança privada.,false
+41,11,união aduaneira.,true
+42,11,mercado comum.,false
+43,11,união económica e monetária.,false
+44,11,zona de comércio livre.,false
+45,12,ao reduzir a concorrência no mercado dos iogurtes.,true
+46,12,ao impedir o reforço do poder de mercado da empresa E.,false
+47,12,ao possibilitar a maximização dos lucros pelo monopolista.,false
+48,12,ao aumentar o preço cobrado pela empresa F no mercado.,false
+49,13,definir as orientações e prioridades políticas da União Europeia.,true
+50,13,elaborar a proposta de orçamento da União Europeia.,false
+51,13,aplicar as políticas cambial e monetária da União Europeia.,false
+52,13,analisar as petições dos cidadãos da União Europeia.,false
+53,14,"aplicou a mesada, constituiu um depósito a prazo.",true
+54,14,"utilizou a mesada, enfrentou um problema económico.",false
+55,14,"utilizou a mesada, realizou um investimento financeiro.",false
+56,14,"aplicou a mesada, efetuou a gestão de recursos ilimitados.",false
+57,15,"vencimentos e subsídios, constituem a distribuição funcional dos rendimentos.",true
+58,15,"vencimentos e subsídios, constituem a distribuição pessoal dos rendimentos.",false
+59,15,"lucros e salários, constituem a distribuição funcional dos rendimentos.",false
+60,15,"lucros e salários, constituem a distribuição pessoal dos rendimentos.",false
+61,16,I e III se referem ao investimento e que a afirmação II se refere ao entesouramento.,true
+62,16,I e II se referem ao autofinanciamento e que a afirmação III se refere aos depósitos.,false
+63,16,I e II se referem ao autofinanciamento e que a afirmação III se refere ao investimento.,false
+64,16,I e III se referem ao investimento e que a afirmação II se refere aos depósitos.,false
+65,17,"verdadeira, porque o valor bruto da produção obtido pelas unidades residentes em Portugal é igual ao
+valor do PIB português.",true
+66,17,"verdadeira, porque o valor acrescentado bruto é obtido por uma unidade residente no território
+económico português.",false
+67,17,"falsa, porque esta unidade industrial de capitais alemães é uma unidade residente no território económico da Alemanha.",false
+68,17,"falsa, porque as vendas de uma empresa constituída por capitais alemães são contabilizadas no PIB
+da Alemanha.",false
+69,18,"a débito, na componente rendimento secundário da balança corrente.",true
+70,18,"a crédito, na componente rendimento secundário da balança corrente.",false
+71,18,"a crédito, na balança de capital.",false
+72,18,"a débito, na balança de capital.",false
+73,19,excluível.,true
+74,19,não rival.,false
+75,19,não excluível.,false
+76,19,rival.,false
+77,20,aprovar as leis monetárias europeias e gerir a moeda única.,true
+78,20,financiar investimentos públicos nos países europeus e fixar a taxa de juro.,false
+79,20,estabelecer as taxas de câmbio e definir as orientações políticas da União Europeia.,false
+80,20,definir a política monetária e gerir os fundos da União Europeia.,false

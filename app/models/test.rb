@@ -1,4 +1,4 @@
 class Test < ApplicationRecord
   belongs_to :user
-  has_many :TestAnswers
+  has_many :test_answers
 end
