@@ -12,9 +12,7 @@ puts "Cleaning DB"
 
 Answer.destroy_all
 Question.destroy_all
-Subject.destroy_all
 Topic.destroy_all
-
 
 p "cleaned the DB"
 
@@ -51,7 +49,7 @@ end
 
 
 # CSV.foreach(question_filepath, headers: :first_row) do |row|
-#   # Question.create.question_content = row['Question Text']
+#   Question.create.question_content = row['Question Text']
 #   # Question.create.type = row['Question Text']
 #   p "#{row['Question Text']}"
 # end
