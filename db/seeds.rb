@@ -6,37 +6,49 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require "csv"
+require "byebug"
 
 puts "Cleaning DB"
+
+Answer.destroy_all
+Question.destroy_all
 Subject.destroy_all
 Topic.destroy_all
-Question.destroy_all
-Answer.destroy_all
 
 
-subject_filepath = "lib/seeds/subjects.csv"
+p "cleaned the DB"
+
 topic_filepath = "lib/seeds/topics.csv"
 question_filepath = "lib/seeds/questions.csv"
 answer_filepath = "lib/seeds/answers.csv"
 
-CSV.foreach(subject_filepath, headers: :first_row) do |row|
-  Subject.create!(name: row['name'])
-  p "#{row['name']}"
-end
+qtype = %w[main specific optional]
+
 
 CSV.foreach(topic_filepath, headers: :first_row) do |row|
-  Topic.create!(name: row['name'], subject_id: row['subject_id'])
+  subject = Subject.create!(name: row['subject_name'])
+  p subject
+  topic = Topic.create!(name: row['name'], subject: subject)
+  p topic
 end
+
+## if you want more topics
+
 
 CSV.foreach(question_filepath, headers: :first_row) do |row|
-  Question.create!(question_content: row['question_content'], topic_id: row['topic_id'])
-  Question.create!(type: row['type'], topic_id: row['topic_id'])
+  Question.create!(qid:row["id"],question_content: row['question_content'],question_type: qtype.sample,topic: Topic.all.sample)
 end
 
-CSV.foreach(answer_filepath, headers: :first_row) do |row|
-  Answer.create!(answer_content: row['answer_content'], question_id: row['question_id'])
-  Answer.create!(correct: row['correct'], answer_id: row['answer_id'])
+
+Question.all.each do |question|
+  CSV.foreach(answer_filepath, headers: :first_row) do |row|
+    if question.qid == row['question_id']
+      Answer.create!(answer_content: row['answer_content'], correct: row['Correct?'] == "true", question: question)
+    end
+  end
 end
+
+
 
 # CSV.foreach(question_filepath, headers: :first_row) do |row|
 #   # Question.create.question_content = row['Question Text']

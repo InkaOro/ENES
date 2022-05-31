@@ -3,5 +3,5 @@ class Question < ApplicationRecord
   has_many :answers
   has_many :test_questions
 
-  validates :type, :main, inclusion: { in: %w[main specific optional]}
+  validates :question_type, inclusion: { in: %w[main specific optional]}
 end
