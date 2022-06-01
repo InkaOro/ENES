@@ -1,1 +1,22 @@
 // Specific CSS for your home-page
+body {
+  background-color: black;
+  // background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.8)),url(asset-path("mountain1.jpg"));
+
+}
+
+h1 {
+  font-family: 'Open Sans';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 65px;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 65px;
+}
