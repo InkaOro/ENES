@@ -1,0 +1,11 @@
+<h1>Dashboard goes here.</h1>
+
+ <div class="card d-flex justify-content-center border border-secondary mt-4 p-3" style="width: 100%">
+  <div class="show-user-profile" >
+    <h2><%= @user_profile.first_name  %></h2>
+    <p><strong>School Name: </strong><%= @user_profile.school_name %> </p>
+    <p><strong>School Year: </strong><%= @user_profile.school_year %> </p>
+    <p><strong>Program: </strong><%= @user_profile.program %> </p>
+  </div>
+</div>
+<%= link_to "edit", user_profiles_edit_path %>

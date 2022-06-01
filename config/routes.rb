@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'user_profiles/new'
-  get 'user_profiles/create'
-  get 'user_profiles/show'
-  get 'user_profiles/find'
-  get 'user_profiles/edit'
-  get 'user_profiles/destroy'
 
   devise_for :users
   root to: 'pages#home'
+  resources :user_profiles, only: [:new, :create, :update]
+  get "user_profiles/edit"
+  get 'dashboard', to: "pages#dashboard"
+
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
 
 end
