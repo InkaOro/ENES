@@ -8,7 +8,7 @@
             <%= f.input :email,
                         required: false,
                         autofocus: true,
-                        placeholder: "DimoTheCEO@gmail.com",
+                        placeholder: "Please enter your email",
                         input_html: { autocomplete: "email" } %>
             <%= f.input :password,
                         required: false,
@@ -17,7 +17,10 @@
             <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
           </div>
           <div class="form-actions">
+
+
             <%= f.button :submit, "Log in", class: "btn-main" %>
+
           </div>
         <% end %>
         <%= render "devise/shared/links" %>

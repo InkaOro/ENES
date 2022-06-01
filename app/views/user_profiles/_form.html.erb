@@ -1,0 +1,11 @@
+<div class="container form-control">
+  <%= simple_form_for @user_profile,url: user_profile_path(@user_profile)	, method: :patch  do |f| %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :school_name %>
+    <%= f.input :school_year %>
+    <%= f.input :program %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
