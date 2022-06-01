@@ -1,12 +1,11 @@
 .footer {
-  background: #222; /*#F4F4F4 transparent*/;
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 70px;
   padding: 0px 50px;
-  opacity: 0.9;
-  // color: rgba(0,0,0,0.3);
+
 }
 .footer-links {
   display: flex;
@@ -14,7 +13,7 @@
 }
 .footer-links a {
   color: white;
-  opacity: 0.15;
+  opacity: 0.7;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
@@ -31,7 +30,7 @@
 
 .company-details a {
   color: white;
-  opacity: 0.15;
+  opacity: 0.7;
   text-decoration: none;
   font-size: 18px;
   padding: 0px 10px;
