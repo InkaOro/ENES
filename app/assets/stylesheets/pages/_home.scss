@@ -1,1 +1,5 @@
 // Specific CSS for your home-page
+body {
+  background-color: black;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.8)),url(asset-path("images/mountain1.jpg"));
+}
