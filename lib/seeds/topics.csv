@@ -1,10 +1,47 @@
-subject_name,topic_name
-Language,Portuguese Second Language
-Language,German
-Language,French
-Language,Spanish
-Language,English
-Language,Story A
-Math,Mathematics A
-Language,Portuguese
-Science,Biology and Geology
+subject_type,subject_name,topic_name
+Main,Economy A,Necessidades e consumo
+Main,Economy A,A producao de bens e servicos
+Main,Economy A,Precos e mercados
+Main,Economy A,Moeda
+Main,Economy A,Rendimentos e distribuicao de rendimentos
+Main,Economy A,Utilizacao dos rendimentos
+Main,Economy A,Os agentes economicos e o circuito economico
+Main,Economy A,A Contabilidad Nacional
+Main,Economy A,As relacoes economicas com o Resto do Mundo
+Main,Economy A,A intervencao do Estado na economia
+Main,Economy A,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+Main,Geography B,A economia portuguesa no contexto da Uniao Europeia

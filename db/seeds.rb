@@ -13,6 +13,7 @@ puts "Cleaning DB"
 Answer.destroy_all
 Question.destroy_all
 Topic.destroy_all
+Subject.destroy_all
 
 p "cleaned the DB"
 
@@ -20,22 +21,19 @@ topic_filepath = "lib/seeds/topics.csv"
 question_filepath = "lib/seeds/questions.csv"
 answer_filepath = "lib/seeds/answers.csv"
 
-qtype = %w[main specific optional]
-
-
 CSV.foreach(topic_filepath, headers: :first_row) do |row|
-  subject = Subject.find_or_create_by(name: row['subject_name'])
+  subject = Subject.find_or_create_by(name: row['subject_name'], stype: row['subject_type'])
   p subject
-  topic = Topic.create!(name: row['name'], subject: subject)
+  topic = Topic.find_or_create_by(name: row['topic_name'], subject: subject)
   p topic
 end
 
 ## if you want more topics
 
 
-CSV.foreach(question_filepath, headers: :first_row) do |row|
-  Question.create!(qid:row["id"],question_content: row['question_content'],question_type: qtype.sample,topic: Topic.all.sample)
-end
+  CSV.foreach(question_filepath, headers: :first_row) do |row|
+    Question.create!(qid:row["id"],question_content: row['question_content'],topic: Topic.all.sample)
+  end
 
 
 Question.all.each do |question|
@@ -45,7 +43,6 @@ Question.all.each do |question|
     end
   end
 end
-
 
 
 # CSV.foreach(question_filepath, headers: :first_row) do |row|
