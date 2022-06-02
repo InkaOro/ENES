@@ -1,6 +1,8 @@
-<div class="card-body">
-  <h2 class="card-title"><%= Subject.name %></h2>
-  <p style="font-size:20px;" class="card-text text-truncate ">Date: </p>
-  <p style="font-size:20px;" class="card-text ">time</p>
-  <%= link_to "Take Test",  class: "btn-second" %>
+<div class="card mb-5" style="background-color: <%= color %>">
+  <div class="card-body">
+    <h2 class="card-title"><%= current_user.email %></h2>
+    <p style="font-size:20px;" class="card-text text-truncate ">Date of the Exam: </p>
+    <p style="font-size:20px;" class="card-text ">Time of the Exam</p>
+    <%= link_to "Take Test", root_path, class: "btn-second" %>
+  </div>
 </div>
