@@ -1,9 +1,14 @@
 class UserProfile < ApplicationRecord
   belongs_to :user
 
+  SCHOOL_YEAR = ["Year 9", "Year 10", "Year 11", "Year 12"]
+
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :school_name, presence: true
-  validates :school_year, presence: true, length: { is: 4 }
-  validates :program, presence: true
+  validates :school_year, presence: true, inclusion: { in: SCHOOL_YEAR }
+  validates :main_subject, presence: true
+  validates :specific_subject_a, presence: true
+  validates :specific_subject_b, presence: true
+  validates :optional_subject, presence: true
 end
