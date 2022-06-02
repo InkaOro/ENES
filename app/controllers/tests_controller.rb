@@ -2,8 +2,11 @@ class TestsController < ApplicationController
   # before_action :set_test, only: [:show]
 
   def show
-    @questions = Question.last.question_content
-    @answers = Answer.last.answer_content
+    @question = Question.last.question_content
+    @answer = Answer.last.answer_content
+    @questions = Question.all
+    @answers = Answer.all
+
   end
 
   private
