@@ -1,8 +1,37 @@
 <div class="banner vh-100">
   <div class="container">
-    <h1>Reach the top with Magello</h1>
-    <p>Change your life and </p>
-    <button class="btn-main" href="#">Get started</button>
-    <button class="btn-second" href="#">second option</button>
+    <div class="row justify-content-between">
+      <div class="col-8 text-center">
+        <h1>Reach the top with Magello</h1>
+        <p>Your ENES exams are just around the corner </p>
+        <p>Discover a new way of learning and improve your score with us!</p>
+      </div>
+      <div class="col-4 d-flex flex-column align-content justify-content-end ps-6">
+        <%= link_to "Get Started", new_user_registration_path, class: "btn-main" %>
+        <%# <button class="btn-main" href="#">Get started</button> %>
+      </div>
+    </div>
   </div>
+
+  <div class="container ">
+    <h2 class="text-left">Build your future right here</h2>
+      <div class="cards d-flex justify-content-around ">
+
+        <div class="card">
+          <i class="fas fa-tachometer-alt"></i>
+          <p>Keep track of your results</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-graduation-cap"></i>
+          <p>Learn in an efficient way</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-chart-line"></i>
+          <p>Improve your scores</p>
+        </div>
+
+  </div>
+
 </div>
