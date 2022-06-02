@@ -1,12 +1,17 @@
-<%# <% @questions.each do |question| %>
+<h1 class="text-center mb-5" style="color: white">ENES Test</h1>
 
-    <%# <%= render 'shared/question_card', questions: @questions, answers: @answers %>
 
-<h1 class="text-center color: white">ENES Test</h1>
-
-<% 20.times do |i| %>
-  <%= render 'shared/question_card', questions: @questions, answers: @answers %>
+<% @questions.each do |question| %>
+  <%= render 'shared/question_card', question: question %>
 <% end %>
+
+
+
+<%# <% 20.times do |i| %>
+  <%# <%= render 'shared/question_card', questions: @questions, answers: @answers %>
+<%# <% end %>
+
+
 
 <div class="container col-8 d-flex justify-content-between">
   <div class="">
