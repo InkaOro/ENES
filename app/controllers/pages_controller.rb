@@ -6,4 +6,8 @@ class PagesController < ApplicationController
 
   def results
   end
+
+  def dashboard
+    @user_profile = current_user.user_profile
+  end
 end
