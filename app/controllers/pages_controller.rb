@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def results
+    @questions = Question.all
   end
 
   def dashboard

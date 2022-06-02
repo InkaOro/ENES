@@ -11,5 +11,4 @@ class TestsController < ApplicationController
     # @test = Test.find(params[:id])
     # authorize @test
   end
-
 end
