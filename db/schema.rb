@@ -114,10 +114,10 @@ ActiveRecord::Schema.define(version: 2022_06_02_145808) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "main_subject"
-    t.string "specific_subject_a"
-    t.string "specific_subject_b"
     t.string "optional_subject"
+    t.string "main_subject"
+    t.string "specific_subject_b"
+    t.string "specific_subject_a"
     t.index ["user_id"], name: "index_user_profiles_on_user_id"
   end
 
