@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 require "csv"
 require "byebug"
 
@@ -14,13 +15,40 @@ Answer.destroy_all
 Question.destroy_all
 Topic.destroy_all
 Subject.destroy_all
+Test.destroy_all
+UserProfile.destroy_all
+User.destroy_all
 
-p "cleaned the DB"
+puts " DB Cleaned"
 
+
+# Outlines the files required to seed the topics / questions / answers datasets
 topic_filepath = "lib/seeds/topics.csv"
 question_filepath = "lib/seeds/questions.csv"
 answer_filepath = "lib/seeds/answers.csv"
 
+# Creates user and links complete user profiles to them
+puts "Creating Users"
+user = User.create!(email: "test5678@gmail.com", password: "123456")
+user_profile = UserProfile.new(first_name: "Dimitris",
+                               last_name: "Samouris",
+                               school_name: "St. Lawrence College",
+                               school_year: "Year 10")
+user_profile.user = user
+user_profile.save
+puts "User Email: #{user.email}, Password: #{user.password}"
+
+# Creatse 3 tests for each user with a hard-coded score
+puts "Creating Tests"
+3.times do
+  test = Test.new(test_score: rand(0..100))
+  test.user = user
+  test.save
+  puts "Test Score: #{test.test_score}"
+end
+
+# Creates records of subjects linked to specific topics
+puts "Creating Subjects and Topics"
 CSV.foreach(topic_filepath, headers: :first_row) do |row|
   subject = Subject.find_or_create_by(name: row['subject_name'], stype: row['subject_type'])
   p subject
@@ -28,14 +56,14 @@ CSV.foreach(topic_filepath, headers: :first_row) do |row|
   p topic
 end
 
-## if you want more topics
+# Creates records of questions with question ids
+puts "Creating Questions"
+CSV.foreach(question_filepath, headers: :first_row) do |row|
+  Question.create!(qid:row["id"],question_content: row['question_content'],topic: Topic.all.sample)
+end
 
-
-  CSV.foreach(question_filepath, headers: :first_row) do |row|
-    Question.create!(qid:row["id"],question_content: row['question_content'],topic: Topic.all.sample)
-  end
-
-
+puts "Creating and linking Answers"
+# Creates answer records and links them to each question id
 Question.all.each do |question|
   CSV.foreach(answer_filepath, headers: :first_row) do |row|
     if question.qid == row['question_id']
@@ -43,35 +71,3 @@ Question.all.each do |question|
     end
   end
 end
-
-
-# CSV.foreach(question_filepath, headers: :first_row) do |row|
-#   Question.create.question_content = row['Question Text']
-#   # Question.create.type = row['Question Text']
-#   p "#{row['Question Text']}"
-# end
-
-# CSV.foreach(answer_filepath, headers: :first_row) do |row|
-#   # Question.create.answer_content = row['Option Text']
-#   p "#{row['Option Text']}"
-# end
-
-# Fake data seeds
-
-# subjects = Subject.all
-
-# subjects.each do |subject|
-#   Topic.create!(name: subject['name'], subject_id: subject.id)
-
-#   topics = Topic.all
-
-#   topics.each do |topic|
-#     Question.create!(topic: topic)
-
-#     questions = Question.all
-
-#     questions.each do |question|
-#       Answer.create!(question_id: question.id)
-#     end
-#   end
-# end

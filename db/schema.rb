@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_01_094459) do
+ActiveRecord::Schema.define(version: 2022_06_02_101238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2022_06_01_094459) do
     t.string "stype"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "color"
   end
 
   create_table "test_answers", force: :cascade do |t|
@@ -82,10 +83,13 @@ ActiveRecord::Schema.define(version: 2022_06_01_094459) do
     t.string "last_name"
     t.string "school_name"
     t.integer "school_year"
-    t.text "program"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "main_subject"
+    t.string "specific_subject_a"
+    t.string "specific_subject_b"
+    t.string "optional_subject"
     t.index ["user_id"], name: "index_user_profiles_on_user_id"
   end
 
