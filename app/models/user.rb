@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_one :user_profile
+  has_many :user_subjects
+  has_many :subjects, through: :user_subjects
 
   after_create :send_welcome_email
 

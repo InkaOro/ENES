@@ -4,10 +4,17 @@
   <div class="col-4">
     <div class="card d-flex justify-content-center border border-secondary my-4 p-3" style="width: 100%">
       <div class="show-user-profile text-center" >
+          <% if @user_profile.photo.attached? %>
+             <%= cl_image_tag @user_profile.photo.key, height: 300, width: 400, crop: :fill %>
+           <% else %>
+             <%= image_tag "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg", height:300, width:400 %>
+          <% end %>
         <h2 class="mb-4">Hi <%= @user_profile.first_name  %> !</h2>
         <p class="mb-0"><strong>School Name: </strong><%= @user_profile.school_name %> </p>
         <p class="mb-0"><strong>School Year: </strong><%= @user_profile.school_year %> </p>
-        <p class="mb-3"><strong>Program: </strong><%= @user_profile.program %> </p>
+         <% current_user.subjects.each do |subject| %>
+            <p class="mb-1"><strong>Subject: </strong><%= subject.name %> </p>
+          <% end %>
         <%= link_to "Edit my Profile", user_profiles_edit_path, class: "btn-main btn-small mt-2" %>
       </div>
     </div>
@@ -17,7 +24,6 @@
     <p class="quote-author">-James Bond-</p>
   </div>
 </div>
-
 <h3 class="text-left white-title">My Exams</h3>
 <div class="container d-flex justify-content-between py-2">
   <% colors = ["#E1D2FE","#BAE5F4","#CCF0C0","#FFEB7F"] %>
