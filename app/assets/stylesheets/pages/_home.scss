@@ -9,10 +9,37 @@ body {
 }
 
 
+
 h1 {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-weight: bold;
   font-size: 52px;
+
+.container-info {
+  padding-top: 140px;
+
+}
+.cards {
+  margin-top: 70px;
+}
+
+.card {
+  width: 200px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+  border-radius: 15px;
+
+  i {
+    font-size: 3em;
+    color: black;
+  }
+
+}
+.card p {
+  color: black
+
 }
