@@ -26,10 +26,19 @@
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-weight: bold;
+  font-size: 20px;
 }
 
-// .banner {
-//  .btn-main {
-//    height: 20px;
-//   }
-// }
+.banner {
+ .btn-main {
+  height: 80px;
+  font-size: 40px;
+  width: 250px;
+  margin: 30px;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+}
