@@ -3,4 +3,17 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   display:flex;
   border-radius: 8px;
+  max-width: 30vh;
+  max-height: 40vh;
+  flex-direction: column;
+  padding: 5px;
+}
+.card-body-dashboard {
+  min-height: 80%;
+
+}
+
+.submit-test {
+  height: inherit;
+  padding: 10px;
 }
