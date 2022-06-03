@@ -1,11 +1,22 @@
 <h1>Dashboard goes here.</h1>
 
- <div class="card d-flex justify-content-center border border-secondary mt-4 p-3" style="width: 100%">
+<div class="card d-flex justify-content-center border border-secondary mt-4 p-3" style="width: 100%">
   <div class="show-user-profile" >
-    <h2><%= @user_profile.first_name  %></h2>
+    <h2><%= @user_profile.first_name %> <%= @user_profile.last_name %> </h2>
     <p><strong>School Name: </strong><%= @user_profile.school_name %> </p>
     <p><strong>School Year: </strong><%= @user_profile.school_year %> </p>
-    <p><strong>Program: </strong><%= @user_profile.program %> </p>
+    <% current_user.subjects.each do |subject| %>
+      <p><strong>Subject: </strong><%= subject.name %> </p>
+    <% end %>
+    <p><strong>Email: </strong><%= @user_profile.user.email %> </p>
+
   </div>
+  <% if @user_profile.photo.attached? %>
+   <%= cl_image_tag @user_profile.photo.key, height: 300, width: 400, crop: :fill %>
+  <% else %>
+   <%= image_tag "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg", height:300, width:400 %>
+
+  <% end %>
 </div>
+
 <%= link_to "edit", user_profiles_edit_path %>

@@ -33,7 +33,12 @@ user = User.create!(email: "test5678@gmail.com", password: "123456")
 user_profile = UserProfile.new(first_name: "Dimitris",
                                last_name: "Samouris",
                                school_name: "St. Lawrence College",
-                               school_year: "Year 10")
+                               school_year: "Year 10",
+                               main_subject: "Mathematics",
+                               specific_subject_a: "Economics",
+                               specific_subject_b: "Physics",
+                               optional_subject: "English Literature"
+                              )
 user_profile.user = user
 user_profile.save
 puts "User Email: #{user.email}, Password: #{user.password}"
@@ -48,9 +53,9 @@ puts "Creating Tests"
 end
 
 # Creates records of subjects linked to specific topics
-puts "Creating Subjects and Topics"
+puts "Creating Subjects and linking Topics"
 CSV.foreach(topic_filepath, headers: :first_row) do |row|
-  subject = Subject.find_or_create_by(name: row['subject_name'], stype: row['subject_type'])
+  subject = Subject.find_or_create_by(name: row['subject_name'], color: row['subject_color'], stype: row['subject_type'])
   p subject
   topic = Topic.find_or_create_by(name: row['topic_name'], subject: subject)
   p topic

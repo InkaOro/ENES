@@ -1,11 +1,18 @@
-<div class="container form-control">
-  <%= simple_form_for @user_profile,url: user_profile_path(@user_)	, method: :patch  do |f| %>
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
-    <%= f.input :school_name %>
-    <%= f.input :school_year %>
-    <%= f.input :program %>
-    <%= f.input :photo, as: :file %>
-    <%= f.button :submit, class: "btn btn-primary" %>
-  <% end %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="form-control">
+      <%= simple_form_for @user_profile do |f| %>
+        <%= f.input :first_name, placeholder: "🧑‍🎓 Please enter your first name." %>
+        <%= f.input :last_name, placeholder: "🧑‍🎓 Please enter your last name." %>
+        <%= f.input :school_name, placeholder: "🏫 Please enter the school you attend." %>
+        <%= f.input :school_year, placeholder: "🏫 Please select your current grade." %>
+        <%= f.input :main_subject, placeholder: "📚 Please select your main subject.", collection: Subject.all %>
+        <%= f.input :specific_subject_a, placeholder: "📚 Please select your first specific subject.", collection: Subject.all %>
+        <%= f.input :specific_subject_b, placeholder: "📚 Please select your second specific subject.", collection: Subject.all %>
+        <%= f.input :optional_subject, placeholder: "📚 Please select your optional subject.", collection: Subject.all %>
+        <%= f.input :photo, as: :file, placeholder: "📷 Please upload your profile pic." %>
+        <%= f.button :submit, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
 </div>

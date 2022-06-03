@@ -1,5 +1,6 @@
 class UserProfile < ApplicationRecord
   belongs_to :user
+  has_one_attached :photo
 
   SCHOOL_YEAR = ["Year 9", "Year 10", "Year 11", "Year 12"]
 

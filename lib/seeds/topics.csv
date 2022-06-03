@@ -1,47 +1,115 @@
-subject_type,subject_name,topic_name
-Main,Economy A,Necessidades e consumo
-Main,Economy A,A producao de bens e servicos
-Main,Economy A,Precos e mercados
-Main,Economy A,Moeda
-Main,Economy A,Rendimentos e distribuicao de rendimentos
-Main,Economy A,Utilizacao dos rendimentos
-Main,Economy A,Os agentes economicos e o circuito economico
-Main,Economy A,A Contabilidad Nacional
-Main,Economy A,As relacoes economicas com o Resto do Mundo
-Main,Economy A,A intervencao do Estado na economia
-Main,Economy A,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Specific,Philosophy,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Optional,Geography A,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
-Main,Geography B,A economia portuguesa no contexto da Uniao Europeia
+subject_type,subject_name,subject_color,topic_name
+Main,Economy A,yellow,Necessidades e consumo
+Main,Economy A,yellow,A producao de bens e servicos
+Main,Economy A,yellow,Precos e mercados
+Main,Economy A,yellow,Moeda
+Main,Economy A,yellow,Rendimentos e distribuicao de rendimentos
+Main,Economy A,yellow,Utilizacao dos rendimentos
+Main,Economy A,yellow,Os agentes economicos e o circuito economico
+Main,Economy A,yellow,A Contabilidad Nacional
+Main,Economy A,yellow,As relacoes economicas com o Resto do Mundo
+Main,Economy A,yellow,A intervencao do Estado na economia
+Main,Economy A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Specific,Philosophy,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Optional,Geography A,yellow,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,Portuguese Second Language,blue,A economia portuguesa no contexto da Uniao Europeia
+Main,German,blue,Greetings
+Main,German,blue,Ordering at a restaurant
+Main,German,blue,Travelling
+Main,German,blue,Work phrases
+Main,French,blue,Greetings
+Main,French,blue,Ordering at a restaurant
+Main,French,blue,Travelling
+Main,French,blue,Work phrases
+Main,Spanish,blue,Greetings
+Main,Spanish,blue,Ordering at a restaurant
+Main,Spanish,blue,Travelling
+Main,Spanish,blue,Work phrases
+Main,English,blue,Greetings
+Main,English,blue,Ordering at a restaurant
+Main,English,blue,Travelling
+Main,English,blue,Work phrases
+Main,Mandarin,blue,Greetings
+Main,Mandarin,blue,Ordering at a restaurant
+Main,Mandarin,blue,Travelling
+Main,Mandarin,blue,Work phrases
+Main,Story A,green,Narrative
+Main,Story A,green,Character development
+Main,Story A,green,Writing style
+Main,Story A,green,Plot development
+Main,Mathematics A,red,Trigonometry
+Main,Mathematics A,red,Algebra
+Main,Mathematics A,red,Geometry
+Main,Mathematics A,red,Calculus
+Main,Portuguese,blue,Greetings
+Main,Portuguese,blue,Ordering at a restaurant
+Main,Portuguese,blue,Travelling
+Main,Portuguese,blue,Work phrases
+Main,Biology and Geology,red,Human body
+Main,Biology and Geology,red,Animal kingdom
+Main,Biology and Geology,red,Structure of a cell
+Main,Biology and Geology,red,Volcanos
+Main,Drawing A,green,Perspective
+Main,Drawing A,green,Brushstrokes
+Main,Drawing A,green,Geometric design
+Main,Descriptive Geometry A,red,Pythagorus
+Main,Descriptive Geometry A,red,Euclid
+Main,Descriptive Geometry A,red,Jullien Models
+Main,Descriptive Geometry A,red,Picture Planes
+Main,Physics and Chemistry A,red,Gravity
+Main,Physics and Chemistry A,red,Mass
+Main,Physics and Chemistry A,red,Measurements
+Main,Physics and Chemistry A,red,Ions
+Main,Story B,green,Narrative
+Main,Story B,green,Character development
+Main,Story B,green,Writing style
+Main,Story B,green,Plot development
+Main,History of Culture and the Arts,green,Music
+Main,History of Culture and the Arts,green,Literature
+Main,History of Culture and the Arts,green,Painting
+Main,History of Culture and the Arts,green,Sculpture
+Main,Latin A,blue,Seneca
+Main,Latin A,blue,Pliny
+Main,Latin A,blue,Marcus Aurelius
+Main,Latin A,blue,Virgil
+Main,Portuguese Literature,green,Poetry
+Main,Portuguese Literature,green,Famous Novelists
+Main,Mathematics B,red,Trigonometry
+Main,Mathematics B,red,Algebra
+Main,Mathematics B,red,Geometry
+Main,Mathematics B,red,Calculus
+Main,Mathematics Applied to Social Sciences,red,Statistical Methods
+Main,Mathematics Applied to Social Sciences,red,Data Collection
+Main,Mathematics Applied to Social Sciences,red,Data Interpretation

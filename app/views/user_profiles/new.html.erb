@@ -1,15 +1,7 @@
 <h1 style="text-align: center;">Create your Student Profile</h1>
 
-<#%= render 'form', user_profile: @user_profile %>
+<p>Please fill out the form below.
 
-<div class="container form-control">
-  <%= simple_form_for @user_profile, url: user_profiles_path(@user_profile) do |f| %>
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
-    <%= f.input :school_name %>
-    <%= f.input :school_year %>
-    <%= f.input :program %>
-    <%= f.input :photo, as: :file %>
-    <%= f.button :submit, class: "btn btn-primary" %>
-  <% end %>
-</div>
+  We need some extra information from you in order to personalise your learning experience! 📜 </p>
+
+<%= render 'form'%>
