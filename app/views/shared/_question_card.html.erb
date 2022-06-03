@@ -1,13 +1,14 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="question-wrapper mb-5 p-4 bg-secondary col-8">
-      <h3 class= "text-left mb-3">Q. <%= question.qid %></h3>
+      <h3 class= "text-start mb-3">Q.<%= question.qid %></h3>
       <div class="container">
         <div class="card mb-3 rounded">
           <div class="card-body text-size fs-4">
             <%= question.question_content %>
           </div>
         </div>
+        <p>Choose your answer:</p>
         <% question.answers.each do |answer| %>
         <div class="card mb-3 rounded-pill">
           <div class="card-body">
