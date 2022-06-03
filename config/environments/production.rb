@@ -1,8 +1,10 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
+  config.action_mailer.default_url_options = { host: "http://www.magello.xyz" }
   # Settings specified here will take precedence over those in config/application.rb.
+  config.action_mailer.delivery_method     = :postmark
+  config.action_mailer.postmark_settings   = { api_token: ENV['0f4fc085-0983-4fe0-80ae-7ae3928b5bb7'] }
 
   # Code is not reloaded between requests.
   config.cache_classes = true

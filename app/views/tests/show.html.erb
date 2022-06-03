@@ -6,18 +6,11 @@
 <% end %>
 
 
-
-<%# <% 20.times do |i| %>
-  <%# <%= render 'shared/question_card', questions: @questions, answers: @answers %>
-<%# <% end %>
-
-
-
 <div class="container col-8 d-flex justify-content-between">
   <div class="">
     <%= link_to "Cancel Test", root_path, class: "btn btn-primary" %>
   </div>
     <div class="">
-    <%= link_to "Submit Answers", root_path, class: "btn btn-primary" %>
+    <%= link_to "Submit Answers", results_path, class: "btn btn-primary" %>
   </div>
 </div>

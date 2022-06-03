@@ -1,5 +1,6 @@
 .btn-main {
   height: auto;
+  width: fit-content;
   background: #e9f0f5;
   background-image: -webkit-linear-gradient(top, #e9f0f5, #ebecf0);
   background-image: -moz-linear-gradient(top, #e9f0f5, #ebecf0);
@@ -14,14 +15,17 @@
   box-shadow: 0px 1px 3px #666666;
   color: #211a21;
   font-size: 20px;
+  font-weight: bold;
   padding: 10px 20px 10px 20px;
   border: solid #ffffff 3px;
   text-decoration: none;
+
 }
 
 .btn-main:hover {
   background: #ffffff;
   text-decoration: none;
+  color:black;
 }
 
 .btn-second {
@@ -48,4 +52,10 @@
   background: black;
   color: #ffffff;
   text-decoration: none;
+}
+
+.btn-small {
+  font-size: 12px;
+  padding: 8px 16px;
+  border: none;
 }
