@@ -1,11 +1,52 @@
-<h1>Dashboard goes here.</h1>
+<h2 class="white-title">My Dashboard</h2>
 
- <div class="card d-flex justify-content-center border border-secondary mt-4 p-3" style="width: 100%">
-  <div class="show-user-profile" >
-    <h2><%= @user_profile.first_name  %></h2>
-    <p><strong>School Name: </strong><%= @user_profile.school_name %> </p>
-    <p><strong>School Year: </strong><%= @user_profile.school_year %> </p>
-    <p><strong>Program: </strong><%= @user_profile.program %> </p>
+ <div class="row">
+  <div class="col-4">
+    <div class="card d-flex justify-content-center border border-secondary my-4 p-3" style="width: 100%">
+      <div class="show-user-profile text-center" >
+        <h2 class="mb-4">Hi <%= @user_profile.first_name  %> !</h2>
+        <p class="mb-0"><strong>School Name: </strong><%= @user_profile.school_name %> </p>
+        <p class="mb-0"><strong>School Year: </strong><%= @user_profile.school_year %> </p>
+        <p class="mb-3"><strong>Program: </strong><%= @user_profile.program %> </p>
+        <%= link_to "Edit my Profile", user_profiles_edit_path, class: "btn-main btn-small mt-2" %>
+      </div>
+    </div>
+  </div>
+  <div class="col-8 text-center d-flex justify-content-center flex-column">
+    <p class="motivation-quote">"Just one small positive thought in the morning can change your whole day."</p>
+    <p class="quote-author">-James Bond-</p>
   </div>
 </div>
-<%= link_to "edit", user_profiles_edit_path %>
+
+<h3 class="text-left white-title">My Exams</h3>
+<div class="container d-flex justify-content-between py-2">
+  <% colors = ["#E1D2FE","#BAE5F4","#CCF0C0","#FFEB7F"] %>
+  <% 4.times do %>
+    <% color = colors.pop() %>
+    <%= render 'shared/subject_card', color: color %>
+  <% end %>
+</div>
+
+<div class="container d-flex">
+
+    <div class="col-6">
+      <div class="card d-flex justify-content-center border border-secondary my-4 p-3" style="width: 100%">
+        <div class="show-user-profile text-center" >
+          <h2 class="mb-4">Placeholder for the hystory</h2>
+          <p class="mb-0"><strong>MATH </p>
+          <p class="mb-0"><strong>GEOGRAPHY</p>
+          <p class="mb-0"><strong>ENGLISH</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card d-flex justify-content-center border border-secondary my-4 p-3" style="width: 100%">
+        <div class="show-user-profile text-center" >
+          <h2 class="mb-4">Placeholder for the score</h2>
+          <p class="mb-0"><strong>some graphs</p>
+          <p class="mb-0"><strong>some numbers</p>
+          <p class="mb-0"><strong>other stuff</p>
+        </div>
+      </div>
+    </div>
+</div>
