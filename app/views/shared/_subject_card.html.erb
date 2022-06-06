@@ -5,7 +5,7 @@
     <p style="font-size:18px;" class="card-text ">Number of Tests Taken:</p>
   </div>
   <div class="submit-test">
-      <%= link_to "Take Test", test_path(Test.all.sample), class: "btn-second" %>
+      <%= link_to "Take Test", tests_path(subject_id: subject.id), method: :post, class: "btn-second" %>
   </div>
 
 </div>

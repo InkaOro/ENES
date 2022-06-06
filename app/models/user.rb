@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_many :tests
   has_many :subjects, through: :user_subjects
 
-  after_create :send_welcome_email
+  # after_create :send_welcome_email
 
   private
 
