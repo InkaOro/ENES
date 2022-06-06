@@ -4,7 +4,7 @@
 
 <h2 class="display-5 text-center mb-5" style="color: white">
   You got <%= @test.test_answers.count(&:correct) %> out of
-  <%= @test.test_answers.count %> questions correct for a final score of <%= @test.test_answers.count(&:correct) /  @test.test_answers.count %>!
+  <%= @test.test_answers.count %> questions correct for a final score of <%= @test.test_answers.count(&:correct) / @test.test_answers.count %>!
 </h2>
 
 <%= render 'shared/results_card', test_answers: @test.test_answers %>
