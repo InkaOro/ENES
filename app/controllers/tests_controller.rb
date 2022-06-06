@@ -1,6 +1,10 @@
 class TestsController < ApplicationController
   # before_action :set_test, only: [:show]
 
+  def create
+
+  end
+
   def show
     @test = Test.find(params[:id])
   end

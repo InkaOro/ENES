@@ -7,12 +7,12 @@
             <%= question.question_content %>
           </div>
 
-
         <p class="text-white">Choose your answer:</p>
 
         <%= form.input question_number - 1, item_label_class: 'answer-display p-2', collection: question.answers.map {
           |answer| [answer.answer_content, answer.id]
           }, as: :radio_buttons, label: '', required: false %>
+
       </div>
     </div>
   </div>

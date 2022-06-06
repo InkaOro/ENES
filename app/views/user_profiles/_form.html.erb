@@ -5,7 +5,7 @@
         <%= f.input :first_name, placeholder: "🧑‍🎓 Please enter your first name." %>
         <%= f.input :last_name, placeholder: "🧑‍🎓 Please enter your last name." %>
         <%= f.input :school_name, placeholder: "🏫 Please enter the school you attend." %>
-        <%= f.input :school_year, placeholder: "🏫 Please select your current grade." %>
+        <%= f.input :school_year, placeholder: "🏫 Please select your current grade.", collection: UserProfile::SCHOOL_YEAR  %>
         <%= f.input :main_subject, placeholder: "📚 Please select your main subject.", collection: Subject.all %>
         <%= f.input :specific_subject_a, placeholder: "📚 Please select your first specific subject.", collection: Subject.all %>
         <%= f.input :specific_subject_b, placeholder: "📚 Please select your second specific subject.", collection: Subject.all %>

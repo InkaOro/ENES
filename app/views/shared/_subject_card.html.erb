@@ -1,8 +1,8 @@
 <div class="card-dashboard" style="background-color: <%= color %>">
   <div class="card-body card-body-dashboard">
-    <h2 class="card-title"><%= subject.name %></h2>
-    <p style="font-size:20px;" class="card-text text-truncate ">Date of the Exam: </p>
-    <p style="font-size:20px;" class="card-text ">Time of the Exam</p>
+    <h2 class="mb-10"><%= subject.name %></h2>
+    <p style="font-size:18px;" class="card-text text-truncate">Date of the Exam: </p>
+    <p style="font-size:18px;" class="card-text ">Number of Tests Taken:</p>
   </div>
   <div class="submit-test">
       <%= link_to "Take Test", tests_path(subject_id: subject.id), method: :post, class: "btn-second" %>

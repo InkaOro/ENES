@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_one :user_profile
   has_many :user_subjects
+  has_many :tests
   has_many :subjects, through: :user_subjects
 
   # after_create :send_welcome_email

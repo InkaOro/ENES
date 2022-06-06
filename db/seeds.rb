@@ -13,6 +13,7 @@ puts "Cleaning DB"
 Answer.destroy_all
 Question.destroy_all
 Topic.destroy_all
+UserSubject.destroy_all
 Subject.destroy_all
 Test.destroy_all
 UserProfile.destroy_all
@@ -42,14 +43,6 @@ user_profile.user = user
 user_profile.save
 puts "User Email: #{user.email}, Password: #{user.password}"
 
-# Creatse 3 tests for each user with a hard-coded score
-puts "Creating Tests"
-3.times do
-  test = Test.new(test_score: rand(0..100))
-  test.user = user
-  test.save
-  puts "Test Score: #{test.test_score}"
-end
 
 # Creates records of subjects linked to specific topics
 puts "Creating Subjects and linking Topics"
@@ -58,6 +51,15 @@ CSV.foreach(topic_filepath, headers: :first_row) do |row|
   p subject
   topic = Topic.find_or_create_by(name: row['topic_name'], subject: subject)
   p topic
+end
+
+# Creatse 3 tests for each user with a hard-coded score
+puts "Creating Tests"
+3.times do
+  test = Test.new(score: rand(0..100), subject: Subject.all.sample)
+  test.user = user
+  test.save
+  puts "Test Score: #{test.score} Test Subject: #{test.subject}"
 end
 
 # Creates records of questions with question ids
@@ -71,7 +73,7 @@ puts "Creating and linking Answers"
 Question.all.each do |question|
   CSV.foreach(answer_filepath, headers: :first_row) do |row|
     if question.qid == row['question_id']
-      Answer.create!(answer_content: row['answer_content'], correct: row['Correct?'] == "true", question: question)
+      Answer.create!(content: row['answer_content'], correct: row['Correct?'] == "true", question: question)
     end
   end
 end

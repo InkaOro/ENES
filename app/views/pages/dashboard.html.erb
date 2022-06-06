@@ -4,17 +4,18 @@
   <!-- user profile card + motivational quote -->
   <div class="row">
     <div class="col-4">
-      <div class="card d-flex justify-content-center border border-secondary my-4 p-3" style="width: 100%">
-        <div class="show-user-profile text-center" >
+      <div class="d-flex card-profile justify-content-center my-4 p-3" style="width: 100%">
+        <div class="text-center" >
             <% if @user_profile.photo.attached? %>
               <%= cl_image_tag @user_profile.photo.key, class: "img-profile"  %>
             <% else %>
               <%= image_tag "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg", class: "avatar-square" %>
             <% end %>
-          <h2 class="mb-4">Hi <%= @user_profile.first_name  %> !</h2>
-          <p class="mb-0"><strong>School Name: </strong><%= @user_profile.school_name %> </p>
-          <p class="mb-0"><strong>School Year: </strong><%= @user_profile.school_year %> </p>
-        <%= link_to "Edit my Profile", user_profiles_edit_path, class: "btn-main btn-small mt-2" %>
+
+          <h3 class="my-3">Hi <%= @user_profile.first_name  %>!</h3>
+          <p class="mb-2"><%= @user_profile.school_name %> </p>
+          <p class="mb-10"><%= @user_profile.school_year %> </p>
+        <%= link_to "Edit Profile" , user_profiles_edit_path, class: "btn-main btn-small" %>
         </div>
       </div>
     </div>
@@ -25,9 +26,10 @@
   </div>
 
   <!-- subject section with 4 subject cards -->
-
   <div class="row">
-    <h3 class="text-left white-title">My Subjects</h3>
+    <div class="text-left white-title">
+      <h3>My Subjects</h3>
+    </div>
     <div class="d-flex justify-content-between py-2">
       <% colors = ["#E1D2FE","#BAE5F4","#CCF0C0","#FFEB7F"] %>
       <% current_user.subjects.each do |subject| %>
@@ -38,16 +40,21 @@
   </div>
 
   <!-- test history card + test results card -->
-  <div class="row justify-content-between mt-5 text-center">
-    <div class="col-5 card bg-light">
-      <h2 class="my-2">My Test History</h2>
-      <% 4.times do %>
-        <%= render 'shared/test_card'%>
-      <% end %>
+  <div class="row justify-content-between mt-5 text-start">
+    <div class="col-6">
+      <h3 class="my-2 white-title">My Test History</h2>
+      <div class="">
+        <% current_user.tests.each do |test| %>
+          <%= render 'shared/test_card', test: test %>
+        <% end %>
+      </div>
     </div>
-    <div class="col-5 card">
-      <h2 class="my-2">My Test Results</h2>
-      <%= image_tag "https://www.researchgate.net/publication/333924108/figure/fig1/AS:772216044154882@1561122060758/The-bar-chart-of-the-average-test-scores-of-the-experimental-and-control-groups-We-can.png", class:"overall-results-image" %>
+
+    <div class="col-6">
+      <h3 class="my-2 white-title">My Test Results</h2>
+      <div class="card">
+        <%= image_tag "https://www.researchgate.net/publication/333924108/figure/fig1/AS:772216044154882@1561122060758/The-bar-chart-of-the-average-test-scores-of-the-experimental-and-control-groups-We-can.png", class:"overall-results-image" %>
+      </div>
     </div>
   </div>
 </div>
