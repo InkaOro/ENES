@@ -1,16 +1,14 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="question-wrapper mb-5 p-4 bg-secondary col-8">
-      <h3 class= "text-start mb-3">Q.<%= question_number %></h3>
+    <div class="question-wrapper mb-5 p-3 col-8">
+      <h3 class= "text-start mb-3 text-white">Q.<%= question_number %></h3>
       <div class="container">
-        <div class="card mb-3 rounded">
-          <div class="card-body text-size fs-4">
+          <div class="question-card p-3 text-size mb-3 fs-4">
             <%= question.question_content %>
           </div>
-        </div>
 
 
-        <p>Choose your answer:</p>
+        <p class="text-white">Choose your answer:</p>
 
         <%= form.input question_number - 1, item_label_class: 'answer-display p-2', collection: question.answers.map {
           |answer| [answer.answer_content, answer.id]

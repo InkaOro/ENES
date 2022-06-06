@@ -1,18 +1,25 @@
-.question_card {
+.question-card {
   /* Add shadows to create the "card" effect */
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  border-radius: 5px;
 }
 
 .question-wrapper {
   border-radius: 5px;
+  background: rgba(184, 201, 208, 0.684);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .answer-display {
   /* Add shadows to create the "card" effect */
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: 0.2s;
   border-radius: 5px;
+  width: auto;
+}
+
+.answer-display:hover {
+  transform: scale(1.02);
 }

@@ -17,6 +17,8 @@ class TestsController < ApplicationController
     end
 
     @test.save!
+
+    redirect_to test_path(@test)
   end
 
   private
