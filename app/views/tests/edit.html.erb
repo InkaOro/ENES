@@ -1,0 +1,21 @@
+<h1 class="display-2 text-center mb-5" style="color: white">ENES Test</h1>
+
+  <%= simple_form_for @test do |f| %>
+    <% @test.questions.each_with_index do |question, index| %>
+      <%= simple_fields_for :test_answers do |taf| %>
+        <%= render 'shared/question_card',
+          question: question,
+          question_number: index + 1,
+          form: taf,
+          answer: @test.test_answers.build %>
+    <% end %>
+  <% end %>
+
+  <div class="container col-8 d-flex justify-content-between">
+    <div class="">
+      <%= link_to "Cancel Test", dashboard_path, class: "btn btn-main" %>
+    </div>
+
+    <%= f.submit 'Submit Answers', class: "btn btn-main" %>
+  </div>
+<% end %>

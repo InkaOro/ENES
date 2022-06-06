@@ -4,10 +4,6 @@ class PagesController < ApplicationController
   def home
   end
 
-  def results
-    @questions = Question.all
-  end
-
   def dashboard
     @user_profile = current_user.user_profile
   end
