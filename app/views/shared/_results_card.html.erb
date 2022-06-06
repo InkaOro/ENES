@@ -10,7 +10,7 @@
             <div class="form-check">
               <%= index + 1 %>. <%= test_answer.question.question_content %>
             </div>
-              <p><%= test_answer.answer_content %></p>
+              <p><%= test_answer.content %></p>
               <% if test_answer.correct %>
                 <span class="text-success fs-5 ms-5"><i class="fas fa-check-circle"></i></span>
               <% else %>

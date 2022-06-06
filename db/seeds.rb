@@ -59,13 +59,13 @@ puts "Creating Tests"
   test = Test.new(score: rand(0..100), subject: Subject.all.sample)
   test.user = user
   test.save
-  puts "Test Score: #{test.score} Test Subject: #{test.subject}"
+  puts "Test Score: #{test.score} Test Subject: #{test.subject.name}"
 end
 
 # Creates records of questions with question ids
 puts "Creating Questions"
 CSV.foreach(question_filepath, headers: :first_row) do |row|
-  Question.create!(qid:row["id"],question_content: row['question_content'],topic: Topic.all.sample)
+  Question.create!(qid:row["id"], question_content: row['question_content'],topic: Topic.first)
 end
 
 puts "Creating and linking Answers"
