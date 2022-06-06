@@ -17,6 +17,19 @@ class TestsController < ApplicationController
     end
 
     @test.save!
+
+    redirect_to test_path(@test)
+  end
+
+  def create
+    # 1. get questions for the subject in params POST /tests params[:subject_id]
+    #  1.1 @questions = Question.where(topic: { subject_id: params[:subject_id] }).includes(:topic)
+    @questions = Question.where(topic: { subject_id: params[:subject_id] }).includes(:topic)
+    # 2. initialize a new test @test = Test.new(user: current_user)
+    @test = Test.new(user: current_user)
+    @test.save
+    @test.questions << @questions
+    redirect_to edit_test_path(@test)
   end
 
   private
@@ -25,4 +38,9 @@ class TestsController < ApplicationController
     # @test = Test.find(params[:id])
     # authorize @test
   end
+
+  def tests_params
+    params.require(:tests).permit(:subject_id)
+  end
+
 end

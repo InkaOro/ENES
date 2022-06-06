@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 }
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :tests, only: %i[index show edit update]
+  resources :tests, only: %i[create index show edit update]
 end
