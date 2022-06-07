@@ -1,7 +1,6 @@
-<div class="card-test d-flex mb-3 p-3" style="background-color: <%= test.subject.color %>">
+<div class="card-test mb-3 p-3" style="background-color: <%= test.subject.color %>">
   <div class="d-flex justify-content-between" >
-    <div><p class="mb-0"><%= test.subject.name %></p></div>
-    <div><p class="mb-0"><%= test.score %></p></div>
-    <div><p class="mb-0"><%= test.created_at %></p></div>
+    <div><p class="mb-0"><strong> <%= test.subject.name %>: </strong> <%= test.score %>%</p></div>
+    <div><p class="mb-0"><%= test.created_at.strftime('%H:%M %p, %A, %B %d %Y') %></p></div>
   </div>
 </div>

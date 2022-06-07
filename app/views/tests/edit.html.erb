@@ -1,13 +1,17 @@
 <h1 class="display-2 text-center mb-5" style="color: white">ENES Test</h1>
 
+  <% if @test.errors.any? %>
+    <p class="text-danger"> Please ensure you have answered all questions. </p>
+  <% end %>
+
   <%= simple_form_for @test do |f| %>
     <% @test.questions.each_with_index do |question, index| %>
-      <%= simple_fields_for :test_answers do |taf| %>
+      <%= f.simple_fields_for :test_answers, @test.test_answers.find {  |ta| ta.question == question } || @test.test_answers.new(question: question) do |taf| %>
         <%= render 'shared/question_card',
           question: question,
           question_number: index + 1,
-          form: taf,
-          answer: @test.test_answers.build %>
+          form: taf
+        %>
     <% end %>
   <% end %>
 

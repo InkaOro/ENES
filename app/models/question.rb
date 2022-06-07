@@ -1,5 +1,5 @@
 class Question < ApplicationRecord
-  belongs_to :topic
+  belongs_to :subject
   has_many :answers
   has_many :test_questions
 end

@@ -1,4 +1,4 @@
-question_id,answer_content,Correct?
+q_id,answer_content,Correct?
 1,"utilização dos rendimentos, em ambos os casos.",true
 1,"consumo e investimento, respetivamente.",false
 1,"realização de investimentos, em ambos os casos.",false
@@ -88,3 +88,48 @@ da Alemanha.",false
 20,financiar investimentos públicos nos países europeus e fixar a taxa de juro.,false
 20,estabelecer as taxas de câmbio e definir as orientações políticas da União Europeia.,false
 20,definir a política monetária e gerir os fundos da União Europeia.,false
+21,"consumo final, e o conjunto dos novos autocarros é considerado uma parcela da formação bruta de
+capital fixo dessa empresa.",true
+21,"consumo final, e o conjunto dos novos autocarros é considerado uma parcela da variação de
+existências dessa empresa.",false
+21,"investimento material, e o conjunto dos novos autocarros é considerado uma parcela da variação de existências dessa empresa.",false
+21,"investimento material, e o conjunto dos novos autocarros é considerado uma parcela da formação
+bruta de capital fixo dessa empresa.",false
+22,"os poucos produtores suportam custos de produção iguais, ao comercializarem bens diferenciados.",true
+22,"os poucos produtores suportam custos de produção iguais, ao comercializarem bens homogéneos.",false
+22,"os muitos produtores comercializam bens diferenciados e, por isso, conseguem influenciar o preço de
+venda.",false
+22,"os muitos produtores comercializam bens homogéneos e, por isso, conseguem influenciar o preço de
+venda.",false
+23,economias de escala.,true
+23,rendimentos marginais constantes.,false
+23,deseconomias de escala.,false
+23,rendimentos marginais decrescentes.,false
+24,o serviço de vigilância prestado por uma empresa de segurança privada às famílias.,true
+24,o valor pago a uma empresa de segurança privada pelo serviço de vigilância prestado às famílias.,false
+24,o valor da utilização do fator trabalho pago às famílias por uma empresa de segurança privada.,false
+24,o número de horas de trabalho fornecido pelas famílias a uma empresa de segurança privada.,false
+25,união aduaneira.,true
+25,mercado comum.,false
+25,união económica e monetária.,false
+25,zona de comércio livre.,false
+26,,true
+26,,false
+26,,false
+26,,false
+27,,true
+27,,false
+27,,false
+27,,false
+28,,true
+28,,false
+28,,false
+28,,false
+29,,true
+29,,false
+29,,false
+29,,false
+30,,true
+30,,false
+30,,false
+30,,false

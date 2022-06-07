@@ -15,20 +15,17 @@ class TestsController < ApplicationController
 
   def update
     @test = Test.find(params[:id])
-
-    params[:test_answers].each do |_index, answer_id|
-      @test.test_answers.build(answer_id: answer_id)
+    if @test.update(test_params)
+      @test.update(score: @test.correct_percentage)
+      redirect_to test_path(@test)
+    else
+      render :edit
     end
-
-    @test.save!
-
-    redirect_to test_path(@test)
   end
 
   def create
     # 1. get questions for the subject in params POST /tests params[:subject_id]
-    #  1.1 @questions = Question.where(topic: { subject_id: params[:subject_id] }).includes(:topic)
-    @questions = Question.where(topic: { subject_id: params[:subject_id] }).includes(:topic).limit(4)
+    @questions = Question.where(subject_id: params[:subject_id]).limit(4)
     # 2. initialize a new test @test = Test.new(user: current_user)
     @test = Test.new(user: current_user, subject_id: params[:subject_id])
     @test.save!
@@ -43,8 +40,8 @@ class TestsController < ApplicationController
     # authorize @test
   end
 
-  def tests_params
-    params.require(:tests).permit(:subject_id)
+  def test_params
+    params.require(:test).permit(test_answers_attributes: [:answer_id, :question_id, :id])
   end
 
 end

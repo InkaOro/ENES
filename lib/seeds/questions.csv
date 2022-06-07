@@ -1,6 +1,6 @@
-id,question_content,exam_paper_year,exam_paper_link,Subject ID
+q_id,question_content,s_id,exam_paper_year,exam_paper_link
 1,"A aquisição de um automóvel e a constituição de um depósito a prazo pela família A são exemplos
-de atividades económicas designadas por",2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
+de atividades económicas designadas por",4,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf
 2,"No estudo da integração económica, as diversas formas de integração, a seguir mencionadas, representam
 diferentes graus de aprofundamento.
 
@@ -11,9 +11,9 @@ IV. Sistema de preferências aduaneiras
 V. União aduaneira
 
 Selecione a opção que corresponde à ordenação das formas de integração económica por ordem crescente
-de aprofundamento.",2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
+de aprofundamento.",4,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf
 3,"De acordo com a contabilidade nacional, a diferença entre rendimento nacional bruto, calculado a preços
-correntes, e rendimento nacional líquido, calculado a preços correntes, corresponde ao valor",2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
+correntes, e rendimento nacional líquido, calculado a preços correntes, corresponde ao valor",4,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf
 4,"Considere as seguintes afirmações, relativas aos diversos tipos de investimento, num determinado país.
 
 I.  Uma empresa adquiriu novas máquinas destinadas à linha de produção de um novo bem.
@@ -22,46 +22,46 @@ ações.
 III.  Uma empresa, com o objetivo de aumentar a produtividade do trabalho, adquiriu e instalou novos
 equipamentos de telecomunicações.
 
-É correto afirmar que, no contexto deste país, as afirmações",2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
+É correto afirmar que, no contexto deste país, as afirmações",4,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf
 5,"A desvalorização da moeda do país A relativamente à moeda do país B provoca o aumento do número
 de unidades monetárias do país A que é possível adquirir com uma unidade monetária do país B. Assim,
 considerando-se tudo o resto constante, podemos afirmar que ocorre, como efeito de curto prazo, no
-mercado interno do país B,",2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
-6,Uma das competências do Banco Central Europeu (BCE) consiste em definir,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf,712
+mercado interno do país B,",4,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf
+6,Uma das competências do Banco Central Europeu (BCE) consiste em definir,4,2020,https://iave.pt/wp-content/uploads/2021/01/EX-EconA712-F1-2020-V1_net.pdf
 7,"Numa dada economia, uma empresa privada de transporte rodoviário de passageiros decidiu despender
 100 milhões de euros na compra de novos autocarros, com o objetivo de retirar de circulação os veículos
 degradados, proporcionando uma melhoria da qualidade do serviço prestado.
 
-Para a empresa, a aquisição dos novos autocarros constitui um exemplo de",2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
+Para a empresa, a aquisição dos novos autocarros constitui um exemplo de",4,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf
 8,"Num mercado de concorrência monopolística, um pequeno produtor consegue, no curto prazo, praticar um
 preço superior ao preço que vigoraria se o mercado fosse de concorrência perfeita.
 
 Esta afirmação é verdadeira, pois, no mercado de concorrência monopolística, ao contrário do que sucede
-no mercado de concorrência perfeita,",2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
+no mercado de concorrência perfeita,",4,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf
 9,"Uma empresa aumentou a produção, tendo registado, a longo prazo, um aumento de 10% na quantidade
 produzida e uma redução de 18% no custo médio de produção.
 
-Com base na situação descrita, podemos afirmar que a referida empresa obteve",2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
-10,Constitui exemplo de um fluxo real das empresas não financeiras para as famílias,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
+Com base na situação descrita, podemos afirmar que a referida empresa obteve",4,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf
+10,Constitui exemplo de um fluxo real das empresas não financeiras para as famílias,4,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf
 11,"A ausência de uma pauta exterior comum nas transações comerciais de mercadorias entre
 Estados-Membros e países terceiros é uma das características da forma de integração económica
-designada por",2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
+designada por",4,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf
 12,"Em 2018, numa economia fechada, existiam apenas duas grandes empresas produtoras de iogurtes
 (empresa E e empresa F). Nesse ano, a administração da empresa E, com o objetivo de aumentar o lucro
 através do controlo do preço do iogurte, procurou adquirir a empresa F.
 
 Neste contexto, e considerando-se tudo o resto constante, o Estado decidiu inviabilizar essa aquisição.
-Através desta intervenção, o Estado pretendeu promover a eficiência económica,",2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
+Através desta intervenção, o Estado pretendeu promover a eficiência económica,",4,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf
 13,"As alterações introduzidas pelo Tratado de Maastricht concederam ao Conselho Europeu o seu estatuto
-formal. Este Conselho tem como função principal",2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf,712
+formal. Este Conselho tem como função principal",4,2019,https://iave.pt/wp-content/uploads/2020/02/EX-EconA712-F1-2019-V1_net.pdf
 14,"Considere que o António recebe todos os meses uma nota de 100 euros. Em janeiro, o António, ao utilizar
 a mesada, optou por comprar um par de ténis, gastando 80 euros, e colocou o valor restante no seu
 mealheiro.
 
-No contexto descrito, podemos afirmar que, quando o António",2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
+No contexto descrito, podemos afirmar que, quando o António",4,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
 15,"O valor acrescentado criado no processo produtivo representa a remuneração dos fatores de produção
 intervenientes nesse processo, de acordo com a participação de cada um deles. Assim, pode afirmar-se
-que os rendimentos distribuídos pelos fatores de produção, sob a forma de rendas, juros,",2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
+que os rendimentos distribuídos pelos fatores de produção, sob a forma de rendas, juros,",4,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
 16,"Considere as afirmações seguintes, relativas aos destinos (ou às aplicações) da poupança.
 
 I. As poupanças das famílias tiveram como destino a aquisição de habitação própria.
@@ -70,16 +70,49 @@ III. As empresas utilizaram os lucros não distribuídos aos acionistas para a a
 duradouros.
 
 No contexto dos destinos (ou das aplicações) da poupança é correto afirmar que, para os agentes
-económicos referidos, as afirmações",2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
+económicos referidos, as afirmações",4,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
 17,"Uma empresa de capitais alemães, que se dedica à produção de automóveis, dispõe de uma unidade
 industrial em Portugal desde 1995.
 
 O valor acrescentado bruto criado na produção de automóveis, por esta unidade industrial, em Portugal, é
 contabilizado, pelo sistema de contas nacionais, no produto interno bruto (PIB) português.
 
-Esta afirmação é",2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
-18,"Em Portugal, os fundos provenientes da União Europeia, no âmbito do Fundo de Coesão, são registados ",2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
+Esta afirmação é",4,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
+18,"Em Portugal, os fundos provenientes da União Europeia, no âmbito do Fundo de Coesão, são registados ",4,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
 19,"Uma das características de um bem público é o facto de a sua utilização por mais um consumidor não
 reduzir a quantidade do bem colocada à disposição dos restantes consumidores.
-Com base na característica acima descrita, podemos afirmar que este bem é considerado um bem",2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
-20,"Compete ao Banco Central Europeu e à Comissão Europeia, respetivamente,",2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf,712
+Com base na característica acima descrita, podemos afirmar que este bem é considerado um bem",4,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
+20,"Compete ao Banco Central Europeu e à Comissão Europeia, respetivamente,",4,2021,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
+21,"Numa dada economia, uma empresa privada de transporte rodoviário de passageiros decidiu despender
+100 milhões de euros na compra de novos autocarros, com o objetivo de retirar de circulação os veículos
+degradados, proporcionando uma melhoria da qualidade do serviço prestado.
+
+Para a empresa, a aquisição dos novos autocarros constitui um exemplo de",4,2019,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
+22,"Num mercado de concorrência monopolística, um pequeno produtor consegue, no curto prazo, praticar um
+preço superior ao preço que vigoraria se o mercado fosse de concorrência perfeita.
+
+Esta afirmação é verdadeira, pois, no mercado de concorrência monopolística, ao contrário do que sucede
+no mercado de concorrência perfeita,",4,2019,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
+23,"Uma empresa aumentou a produção, tendo registado, a longo prazo, um aumento de 10% na quantidade
+produzida e uma redução de 18% no custo médio de produção.
+
+Com base na situação descrita, podemos afirmar que a referida empresa obteve",4,2019,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
+24,Constitui exemplo de um fluxo real das empresas não financeiras para as famílias,4,2019,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
+25,"A ausência de uma pauta exterior comum nas transações comerciais de mercadorias entre
+Estados-Membros e países terceiros é uma das características da forma de integração económica
+designada por",4,2019,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
+26,,4,2019,https://iave.pt/wp-content/uploads/2021/07/EX-EconA712-F1-2021-V1_net.pdf
+27,,,,
+28,,,,
+29,,,,
+30,,,,
+31,,,,
+32,,,,
+33,,,,
+34,,,,
+35,,,,
+36,,,,
+37,,,,
+38,,,,
+39,,,,
+40,,,,

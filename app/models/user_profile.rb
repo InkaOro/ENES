@@ -8,8 +8,4 @@ class UserProfile < ApplicationRecord
   validates :last_name, presence: true
   validates :school_name, presence: true
   validates :school_year, presence: true, inclusion: { in: SCHOOL_YEAR }
-  validates :main_subject, presence: true
-  validates :specific_subject_a, presence: true
-  validates :specific_subject_b, presence: true
-  validates :optional_subject, presence: true
 end

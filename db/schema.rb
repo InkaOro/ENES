@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_06_161922) do
+ActiveRecord::Schema.define(version: 2022_06_07_151519) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,19 +55,19 @@ ActiveRecord::Schema.define(version: 2022_06_06_161922) do
   create_table "questions", force: :cascade do |t|
     t.text "question_content"
     t.integer "question_score"
-    t.bigint "topic_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "qid"
-    t.index ["topic_id"], name: "index_questions_on_topic_id"
+    t.bigint "subject_id", null: false
+    t.index ["subject_id"], name: "index_questions_on_subject_id"
   end
 
   create_table "subjects", force: :cascade do |t|
     t.string "name"
-    t.string "stype"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "color"
+    t.string "sid"
   end
 
   create_table "test_answers", force: :cascade do |t|
@@ -75,7 +75,9 @@ ActiveRecord::Schema.define(version: 2022_06_06_161922) do
     t.bigint "answer_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "question_id", null: false
     t.index ["answer_id"], name: "index_test_answers_on_answer_id"
+    t.index ["question_id"], name: "index_test_answers_on_question_id"
     t.index ["test_id"], name: "index_test_answers_on_test_id"
   end
 
@@ -95,17 +97,9 @@ ActiveRecord::Schema.define(version: 2022_06_06_161922) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "subject_id"
+    t.bigint "subject_id", null: false
     t.index ["subject_id"], name: "index_tests_on_subject_id"
     t.index ["user_id"], name: "index_tests_on_user_id"
-  end
-
-  create_table "topics", force: :cascade do |t|
-    t.string "name"
-    t.bigint "subject_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["subject_id"], name: "index_topics_on_subject_id"
   end
 
   create_table "user_profiles", force: :cascade do |t|
@@ -147,14 +141,12 @@ ActiveRecord::Schema.define(version: 2022_06_06_161922) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "answers", "questions"
-  add_foreign_key "questions", "topics"
   add_foreign_key "test_answers", "answers"
+  add_foreign_key "test_answers", "questions"
   add_foreign_key "test_answers", "tests"
   add_foreign_key "test_questions", "questions"
   add_foreign_key "test_questions", "tests"
-  add_foreign_key "tests", "subjects"
   add_foreign_key "tests", "users"
-  add_foreign_key "topics", "subjects"
   add_foreign_key "user_profiles", "users"
   add_foreign_key "user_subjects", "subjects"
   add_foreign_key "user_subjects", "users"

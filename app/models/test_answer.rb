@@ -1,6 +1,6 @@
 class TestAnswer < ApplicationRecord
   belongs_to :test
   belongs_to :answer
-
-  delegate :question, :content, :correct, to: :answer
+  belongs_to :question
+  delegate :content, :correct, to: :answer
 end
