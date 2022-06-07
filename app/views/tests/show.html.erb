@@ -1,15 +1,15 @@
-<h1 class="display-2 text-center mb-5" style="color: white">
-  Congratulations!
-</h1>
+<h1 class="text-center mb-5">Congratulations!</h1>
 
-<h2 class="display-5 text-center mb-5" style="color: white">
+<h2 class="text-center mb-5">
   You got <%= @test.correct_answers %> out of
   <%= @test.test_questions.count %> questions correct for a final score of <%= @test.score %>%!
 </h2>
 
-<%= render 'shared/results_card', test_answers: @test.test_answers %>
+<div class="result-answer">
+  <%= render 'shared/results_card', test_answers: @test.test_answers %>
+</div>
 
-<div class="container col-8 d-flex justify-content-end">
+<div class="container btn-fixing col-10 d-flex justify-content-end fixed-bottom">
    <div class="">
     <%= link_to "Go Home", dashboard_path, class: "btn-main" %>
   </div>

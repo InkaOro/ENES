@@ -1,4 +1,4 @@
-<h1 class="display-2 text-center mb-5" style="color: white">ENES Test</h1>
+<h1 class="text-center mb-5">ENES Test</h1>
 
   <% if @test.errors.any? %>
     <p class="text-danger"> Please ensure you have answered all questions. </p>
@@ -15,11 +15,11 @@
     <% end %>
   <% end %>
 
-  <div class="container col-8 d-flex justify-content-between">
+  <div class="container btn-fixing col-10 d-flex justify-content-between fixed-bottom">
     <div class="">
       <%= link_to "Cancel Test", dashboard_path, class: "btn btn-main" %>
     </div>
 
-    <%= f.submit 'Submit Answers', class: "btn btn-main" %>
+    <%= f.submit 'Submit Test', class: "btn btn-main" %>
   </div>
 <% end %>

@@ -1,9 +1,8 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="question-wrapper mb-5 p-3 col-8">
-      <h3 class= "text-start mb-3 text-white">Q.<%= question_number %></h3>
       <div class="container">
-          <div class="question-card p-3 text-size mb-3 fs-4">
+          <div class="question-card p-3 text-size mb-3">
             <%= question.question_content.gsub(/\n/, '<br />').html_safe %>
           </div>
 
