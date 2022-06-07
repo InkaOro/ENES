@@ -20,7 +20,7 @@ class TestsController < ApplicationController
       @test.test_answers.build(answer_id: answer_id)
     end
 
-    @test.save!
+    @test.save
 
     redirect_to test_path(@test)
   end
