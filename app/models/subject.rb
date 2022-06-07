@@ -1,4 +1,3 @@
 class Subject < ApplicationRecord
-  has_many :topics, dependent: :destroy
-  # has_many :user_subjects
+  has_many :questions, dependent: :destroy
 end

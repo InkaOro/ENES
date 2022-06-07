@@ -6,6 +6,8 @@ class Test < ApplicationRecord
   has_many :test_questions
   has_many :questions, through: :test_questions
 
+  accepts_nested_attributes_for :test_answers
+
   def correct_answers
     test_answers.count(&:correct)
   end

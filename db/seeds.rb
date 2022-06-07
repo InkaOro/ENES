@@ -7,23 +7,25 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require "csv"
+require "byebug"
 
 puts "Cleaning DB"
 
+TestAnswer.destroy_all
+TestQuestion.destroy_all
 Answer.destroy_all
 Question.destroy_all
-Topic.destroy_all
 UserSubject.destroy_all
-Subject.destroy_all
 Test.destroy_all
+Subject.destroy_all
 UserProfile.destroy_all
 User.destroy_all
 
 puts " DB Cleaned"
 
 
-# Outlines the files required to seed the topics / questions / answers datasets
-topic_filepath = "lib/seeds/topics.csv"
+# Outlines the files required to seed the questions / answers datasets
+subject_filepath = "lib/seeds/subjects.csv"
 question_filepath = "lib/seeds/questions.csv"
 answer_filepath = "lib/seeds/answers.csv"
 
@@ -34,46 +36,44 @@ user_profile = UserProfile.new(first_name: "Dimitris",
                                last_name: "Samouris",
                                school_name: "St. Lawrence College",
                                school_year: "Year 10",
-                               main_subject: "Mathematics",
-                               specific_subject_a: "Economics",
-                               specific_subject_b: "Physics",
-                               optional_subject: "English Literature"
+                               user: user
                               )
-user_profile.user = user
 user_profile.save
 puts "User Email: #{user.email}, Password: #{user.password}"
 
-
-# Creates records of subjects linked to specific topics
-puts "Creating Subjects and linking Topics"
-CSV.foreach(topic_filepath, headers: :first_row) do |row|
-  subject = Subject.find_or_create_by(name: row['subject_name'], color: row['subject_color'], stype: row['subject_type'])
+# Creates records of subjects with subject ids
+puts "Creating Subjects"
+CSV.foreach(subject_filepath, headers: :first_row) do |row|
+  subject = Subject.find_or_create_by(name: row['subject_name'], color: row['subject_color'], sid: row['s_id'])
   p subject
-  topic = Topic.find_or_create_by(name: row['topic_name'], subject: subject)
-  p topic
-end
-
-# Creatse 3 tests for each user with a hard-coded score
-puts "Creating Tests"
-3.times do
-  test = Test.new(score: rand(0..100), subject: Subject.all.sample)
-  test.user = user
-  test.save
-  puts "Test Score: #{test.score} Test Subject: #{test.subject.name}"
 end
 
 # Creates records of questions with question ids
-puts "Creating Questions"
-CSV.foreach(question_filepath, headers: :first_row) do |row|
-  Question.create!(qid:row["id"], question_content: row['question_content'],topic: Topic.first)
+puts "Creating and linking Questions"
+Subject.all.each do |subject|
+  CSV.foreach(question_filepath, headers: :first_row) do |row|
+    if subject.sid == row['s_id']
+      Question.create!(qid: row['q_id'], question_content: row['question_content'], subject: subject)
+    end
+  end
 end
+
 
 puts "Creating and linking Answers"
 # Creates answer records and links them to each question id
 Question.all.each do |question|
   CSV.foreach(answer_filepath, headers: :first_row) do |row|
-    if question.qid == row['question_id']
+    if question.qid == row['q_id']
       Answer.create!(content: row['answer_content'], correct: row['Correct?'] == "true", question: question)
     end
   end
+end
+
+# Creatse 3 tests for each user with a hard-coded score
+puts "Creating Tests"
+6.times do
+  test = Test.new(score: rand(0..100), subject: Subject.all.sample)
+  test.user = user
+  test.save
+  puts "Test Score: #{test.score} Test Subject: #{test.subject.name}"
 end
