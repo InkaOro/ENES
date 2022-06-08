@@ -3,7 +3,7 @@
     <div class="question-wrapper mb-5 p-4 col-8">
       <h1 class= "text-center mb-3">Results</h1>
 
-      <div class="container">
+      <div class="container" data-controller="numbered-answers">
         <h1><% test_answers.each_with_index do |test_answer, index| %> </h1>
         <div class="mb-3 p-3">
             <div class="d-flex justify-content-between flex-column align-items-left">
@@ -11,15 +11,15 @@
                   <ul class="ul-no-style">
                     <% test_answer.question.answers.each do |answer| %>
                       <% if answer.correct %>
-                        <li class="text-success answer-display p-2 mb-1 no-hover">
+                        <li class="text-success answer-display p-2 mb-2 no-hover">
                           <span class="text-success fs-16px"><i class="fas fa-check-circle"></i></span> <%= answer.content %>
                         </li>
                       <% elsif !answer.correct && test_answer.answer == answer %>
-                        <li class="text-danger answer-display p-2 mb-1 no-hover">
+                        <li class="text-danger answer-display p-2 mb-2 no-hover">
                           <span class="text-danger fs-16px"><i class="fas fa-times"></i></span> <%= answer.content %>
                         </li>
                       <% else %>
-                        <li class="answer-display p-2 mb-1 no-hover">
+                        <li class="answer-display p-2 mb-2 no-hover">
                           <%= answer.content %>
                         </li>
                       <% end %>

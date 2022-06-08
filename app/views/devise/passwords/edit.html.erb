@@ -3,7 +3,7 @@
     <div class="col-4 col-xs-12 col-sm-4 col-sm-offset-4">
       <div class="form-login">
 
-        <h2>Change your password</h2>
+        <h4>Change your password</h4>
 
         <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
           <%= f.error_notification %>
@@ -25,7 +25,7 @@
           </div>
 
           <div class="form-actions">
-            <%= f.button :submit, "Change my password", class: "btn btn-primary" %>
+            <%= f.button :submit, "Change my password", class: "btn btn-main" %>
           </div>
         <% end %>
 
