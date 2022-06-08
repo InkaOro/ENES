@@ -8,10 +8,8 @@
         <div class="text-center" >
             <% if @user_profile.photo.attached? %>
               <%= cl_image_tag(@user_profile.photo.key, :transformation=>[
-                              {:gravity=>"face", :height=>4000, :width=>4000, :crop=>"crop"},
-                              {:radius=>"max"},
-                              {:width=>200, :crop=>"scale"}
-                              ], class: "img-profile") %>
+                              {:gravity=>"face", :height=>200, :width=>200, :crop=>"fill"}
+                              ], class: "img-profile border border-2 border-secondary") %>
             <% else %>
               <%= image_tag "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg", class: "avatar-square" %>
             <% end %>
