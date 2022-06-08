@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require "csv"
-require "byebug"
+# require "byebug"
 
 puts "Cleaning DB"
 
