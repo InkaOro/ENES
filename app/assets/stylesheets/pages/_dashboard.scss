@@ -14,6 +14,56 @@
 }
 .form-control-profile {
   margin-bottom: 200px;
+  background: rgba(255,255,255,0.2);
+  padding: 20px 25px;
+  border: none;
+
+  input::placeholder {
+    color: rgba(255,255,255,0.5);
+  }
+
+  select::placeholder {
+    color: rgba(255,255,255,0.5);
+  }
+
+  input {
+    background-color: rgba(255,255,255,0.35);
+    color: white;
+
+    &:-webkit-autofill:focus {
+      // background-color: rgba(255,255,255,0.35);
+      border-color: white;
+      box-shadow: 0 0 0 0.25rem rgba(255,255,255,0.2);
+      // color: white;
+      -webkit-text-fill-color: white !important;
+      -webkit-background-clip: text;
+    }
+
+    &:focus {
+      background-color: rgba(255,255,255,0.35);
+      border-color: white;
+      box-shadow: 0 0 0 0.25rem rgba(255,255,255,0.2);
+      color: white;
+    }
+  }
+
+  select {
+    background-color: rgba(255,255,255,0.35);
+    color: white;
+
+    &:focus {
+      background-color: rgba(255,255,255,0.35);
+      border-color: white;
+      box-shadow: 0 0 0 0.25rem rgba(255,255,255,0.2);
+      color: white;
+    }
+  }
+}
+
+
+
+.white-label {
+  color: white;
 }
 
 .motivation-quote {

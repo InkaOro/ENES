@@ -17,14 +17,16 @@ class UserProfilesController < ApplicationController
       user_profile_params[:optional_subject]
     ]
 
-    create_user_subjects(subjects)
-
-    # authorize @user_profile
-
-    if @user_profile.save
-      redirect_to dashboard_path, notice: "User was successfully created."
-    else
+    if subjects.include? ''
       render :new
+    else
+      create_user_subjects(subjects)
+
+      if @user_profile.save
+        redirect_to dashboard_path, notice: "User was successfully created."
+      else
+        render :new
+      end
     end
   end
 

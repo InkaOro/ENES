@@ -6,11 +6,9 @@
             <%= question.question_content.gsub(/\n/, '<br />').html_safe %>
           </div>
 
-        <p class="text-white">Choose your answer:</p>
-
         <%= form.input :question_id, as: :hidden %>
 
-        <%= form.input :answer_id, item_label_class: 'answer-display p-2', collection: question.answers.shuffle.map {
+        <%= form.input :answer_id, item_label_class: 'answer-display p-2', collection: question.answers.map {
           |answer| [answer.content, answer.id]
           }, as: :radio_buttons, label: '', required: false %>
 
