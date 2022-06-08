@@ -1,23 +1,23 @@
-subject_name,subject_color,s_id,enes_id
-Biology and Geology,#e1d2fe,1,702
-Descriptive Geometry A,#e1d2fe,2,708
-Drawing A,#ccf0c0,3,706
-Economy A,#ffeb7f,4,712
-English,#bae5f4,5,550
-French,#bae5f4,6,517
-Geography A,#ffeb7f,7,719
-German,#bae5f4,8,501
-History of Culture and the Arts,#ccf0c0,9,724
-Latin A,#bae5f4,10,732
-Mandarin,#bae5f4,11,848
-Mathematics A,#e1d2fe,12,635
-Mathematics Applied to Social Sciences,#e1d2fe,13,835
-Mathematics B,#e1d2fe,14,735
-Philosophy,#ffeb7f,15,714
-Physics and Chemistry A,#e1d2fe,16,715
-Portuguese,#bae5f4,17,639
-Portuguese Literature,#ccf0c0,18,734
-Portuguese Non-Mother Language,#bae5f4,19,839
-Spanish,#bae5f4,20,847
-Story A,#ccf0c0,21,623
-Story B,#ccf0c0,22,723
+subject_name,subject_color,s_id,enes_id,exam_date
+Biology and Geology,#e1d2fe,1,702,21/06/2022
+Descriptive Geometry A,#e1d2fe,2,708,06/07/2022
+Drawing A,#ccf0c0,3,706,05/07/2022
+Economy A,#ffeb7f,4,712,23/06/2022
+English,#bae5f4,5,550,23/06/2022
+French,#bae5f4,6,517,21/06/2022
+Geography A,#ffeb7f,7,719,20/06/2022
+German,#bae5f4,8,501,23/06/2022
+History of Culture and the Arts,#ccf0c0,9,724,20/06/2022
+Latin A,#bae5f4,10,732,06/07/2022
+Mandarin,#bae5f4,11,848,17/06/2022
+Mathematics A,#e1d2fe,12,635,30/06/2022
+Mathematics Applied to Social Sciences,#e1d2fe,13,835,30/06/2022
+Mathematics B,#e1d2fe,14,735,30/06/2022
+Philosophy,#ffeb7f,15,714,28/06/2022
+Physics and Chemistry A,#e1d2fe,16,715,27/06/2022
+Portuguese,#bae5f4,17,639,17/06/2022
+Portuguese Literature,#ccf0c0,18,734,27/06/2022
+Portuguese Non-Mother Language,#bae5f4,19,839,17/06/2022
+Spanish,#bae5f4,20,847,22/06/2022
+Story A,#ccf0c0,21,623,22/06/2022
+Story B,#ccf0c0,22,723,06/07/2022

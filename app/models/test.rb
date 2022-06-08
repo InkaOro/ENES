@@ -7,6 +7,7 @@ class Test < ApplicationRecord
   has_many :questions, through: :test_questions
 
   accepts_nested_attributes_for :test_answers
+  enum status: { draft: 0, completed: 1 }
 
   def correct_answers
     test_answers.count(&:correct)
