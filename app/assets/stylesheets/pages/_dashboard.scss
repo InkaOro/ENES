@@ -21,9 +21,13 @@
   font-size: 30px;
   font-style: italic;
 }
+.motivation-quote p {
+  margin-bottom: 0;
+}
 
 .quote-author {
   color: white;
+  font-size: 19px;
   // color:#BAE5F4;
   // color:#E1D2FE;
   // color:#CCF0C0;
@@ -40,7 +44,7 @@ border-radius: 5px;
 // color that should pull from subject database
 // color: subject.color
 // border shadow so it looks a bit bevelled
-box-shadow: 5px 5px 8px lightgrey;
+box-shadow: 3px 3px 10px lightgrey;
 border-style: solid;
 border-width: 1px;
 // how do we set border-color dynamic to a darker version of the color that gets pulled from the db?

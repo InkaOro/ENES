@@ -1,11 +1,17 @@
 <div class="card-dashboard" style="background-color: <%= color %>">
-  <div class="card-body card-body-dashboard">
-    <h2 class="mb-10"><%= subject.name %></h2>
-    <p style="font-size:18px;" class="card-text text-truncate">Date of the Exam: </p>
-    <p style="font-size:18px;" class="card-text ">Number of Tests Taken:</p>
-  </div>
-  <div class="submit-test">
-      <%= link_to "Take Test", tests_path(subject_id: subject.id), method: :post, class: "btn-second" %>
+  <div class="card-body card-body-dashboard d-flex flex-column">
+    <h2 class="mb-10 text-center"><%= subject.name %></h2>
+    <div class="d-flex flex-column flex-grow-1 justify-content-center text-center">
+      <p class="card-text text-truncate">
+        <strong><%=  distance_of_time_in_words(Date.today, Date.today + 13.days) %> </strong> until exam!
+      </p>
+      <p class="card-text ">
+        <strong><%= pluralize(Test.where(user: current_user, subject: subject).count, 'test') %></strong> taken
+      </p>
+    </div>
   </div>
 
+  <div class="submit-test text-center">
+    <%= link_to "Take Test", tests_path(subject_id: subject), method: :post, class: "btn btn-second" %>
+  </div>
 </div>
