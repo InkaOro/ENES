@@ -21,25 +21,23 @@
         </div>
       </div>
     </div>
-    <div class="col-9 text-center d-flex justify-content-center flex-column">
-      <p class="motivation-quote ">"<%= @quote["text"] %>"</p>
-      <p class="quote-author">-<%= @quote["author"] %>-</p>
+    <div class="col-9 text-center d-flex mt-5 flex-column">
+      <div class="">
+        <p class="motivation-quote ">"<%= @quote["text"] %>"</p>
+        <p class="quote-author">-<%= @quote["author"] %>-</p>
+      </div>
+      <div class="row">
+        <% current_user.subjects.each do |subject| %>
+          <div class="col-3 mt-4">
+            <%= render 'shared/subject_card', color: subject.color, subject:subject %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 
   <!-- subject section with 4 subject cards -->
-  <div class="row">
-    <div class="text-left white-title">
-      <h3>My Subjects</h3>
-    </div>
-    <div class="d-flex justify-content-between py-2">
-      <%# colors = ["#E1D2FE","#BAE5F4","#CCF0C0","#FFEB7F"] %>
-      <% current_user.subjects.each do |subject| %>
-        <%# color = colors.pop() %>
-        <%= render 'shared/subject_card', color: subject.color, subject:subject %>
-      <% end %>
-    </div>
-  </div>
+
 
   <!-- test history card + test results card -->
   <div class="row justify-content-between mt-5 text-start">
