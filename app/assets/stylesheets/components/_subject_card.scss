@@ -3,17 +3,27 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   display:flex;
   border-radius: 8px;
-  max-width: 30vh;
-  max-height: 40vh;
+  min-height: 230px;
   flex-direction: column;
   padding: 5px;
+  box-shadow: 3px 3px 10px lightgrey;
 }
 .card-body-dashboard {
   min-height: 80%;
+}
+
+.submit-test .btn-second {
+  padding: 10px;
+  font-size: 15px;
 
 }
 
-.submit-test {
-  height: inherit;
-  padding: 10px;
+.card-dashboard h2 {
+  color: black;
+  font-size: 25px;
+}
+.card-dashboard p {
+  color: black;
+  font-size: 15px;
+
 }
