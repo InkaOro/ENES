@@ -10,7 +10,7 @@
 
         <%= form.input :question_id, as: :hidden %>
 
-        <%= form.input :answer_id, item_label_class: 'answer-display p-2', collection: question.answers.map {
+        <%= form.input :answer_id, item_label_class: 'answer-display p-2', collection: question.answers.shuffle.map {
           |answer| [answer.content, answer.id]
           }, as: :radio_buttons, label: '', required: false %>
 
