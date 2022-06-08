@@ -1,9 +1,10 @@
 <div class="card-dashboard" style="background-color: <%= color %>">
+
   <div class="card-body card-body-dashboard d-flex flex-column">
     <h2 class="mb-10 text-center"><%= subject.name %></h2>
     <div class="d-flex flex-column flex-grow-1 justify-content-center text-center">
       <p class="card-text text-truncate">
-        <strong><%=  distance_of_time_in_words(Date.today, Date.today + 13.days) %> </strong> until exam!
+        <strong><%=  distance_of_time_in_words(Date.today, subject.exam_date ) %> </strong> until exam!
       </p>
       <p class="card-text ">
         <strong><%= pluralize(Test.where(user: current_user, subject: subject).count, 'test') %></strong> taken

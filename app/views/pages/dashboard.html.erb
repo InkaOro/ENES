@@ -43,17 +43,46 @@
   <div class="row justify-content-between mt-5 text-start">
     <div class="col-6">
       <h3 class="my-2 white-title">My Test History</h2>
-      <div class="">
-        <% current_user.tests.each do |test| %>
-          <%= render 'shared/test_card', test: test %>
+      <div>
+        <% if current_user.tests.completed.empty? %>
+          <div class="empty-warning">
+            <br>
+            <%= "You have not completed any tests yet. 😔" %>
+            <br>
+            <br>
+            <%= "Have a go and you'll see your results here!" %>
+          </div>
+        <% else %>
+          <% current_user.tests.completed.each do |test| %>
+            <%= render 'shared/test_card', test: test %>
+          <% end %>
         <% end %>
       </div>
     </div>
 
     <div class="col-6">
       <h3 class="my-2 white-title">My Test Results</h2>
-      <div class="card">
-        <%= image_tag "https://www.researchgate.net/publication/333924108/figure/fig1/AS:772216044154882@1561122060758/The-bar-chart-of-the-average-test-scores-of-the-experimental-and-control-groups-We-can.png", class:"overall-results-image" %>
+      <div>
+        <% if current_user.tests.completed.empty? %>
+          <div class="empty-warning">
+            <br>
+            <%= "You have not completed any tests yet. 😔" %>
+            <br>
+            <br>
+            <%= "Have a go and you'll see your results here!" %>
+          </div>
+        <% else %>
+          <div>
+            <%= line_chart current_user.test_subjects.map { |subject|
+              {
+                name: subject.name,
+                color: subject.color,
+                data: current_user.tests.where(subject: subject).group_by_day(:created_at).average(:score).compact
+              }
+            }, max: 100, ytitle: 'Score', height: "500px"
+            %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

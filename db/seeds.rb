@@ -44,7 +44,8 @@ puts "User Email: #{user.email}, Password: #{user.password}"
 # Creates records of subjects with subject ids
 puts "Creating Subjects"
 CSV.foreach(subject_filepath, headers: :first_row) do |row|
-  subject = Subject.find_or_create_by(name: row['subject_name'], color: row['subject_color'], sid: row['s_id'])
+  subject = Subject.find_or_create_by(name: row['subject_name'], color: row['subject_color'],
+                                      sid: row['s_id'], exam_date: row['exam_date'])
   p subject
 end
 

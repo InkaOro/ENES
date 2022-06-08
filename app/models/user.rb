@@ -10,6 +10,10 @@ class User < ApplicationRecord
 
   # after_create :send_welcome_email
 
+  def test_subjects
+    Subject.where(id: tests.completed.pluck(:subject_id).uniq)
+  end
+
   private
 
   def send_welcome_email

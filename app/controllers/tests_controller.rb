@@ -1,10 +1,6 @@
 class TestsController < ApplicationController
   # before_action :set_test, only: [:show]
 
-  def create
-
-  end
-
   def show
     @test = Test.find(params[:id])
   end
@@ -15,8 +11,9 @@ class TestsController < ApplicationController
 
   def update
     @test = Test.find(params[:id])
+
     if @test.update(test_params)
-      @test.update(score: @test.correct_percentage)
+      @test.update(score: @test.correct_percentage, status: :completed)
       redirect_to test_path(@test)
     else
       render :edit
