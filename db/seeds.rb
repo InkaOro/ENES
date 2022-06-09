@@ -54,21 +54,29 @@ CSV.foreach(subject_filepath, headers: :first_row) do |row|
                             sid: row['s_id'], exam_date: row['exam_date'])
 end
 
-PROFILE_SUBJECTS.each do |name|
-  user.subjects << Subject.find_by(name: name)
-end
-
-# Create 40 tests for each user with a hard-coded score
 puts "Creating User Seeded Tests"
-40.times do
-  test = Test.create!(
-    status: :completed,
-    user: user, score: rand(0..100),
-    subject: Subject.find_by(name: PROFILE_SUBJECTS.sample),
-    created_at: (Date.today - 20.days..Date.today).to_a.sample
-  )
+PROFILE_SUBJECTS.each do |name|
+  subject = Subject.find_by(name: name)
+  user.subjects << subject
 
-  puts "Test Score: #{test.score} Test Subject: #{test.subject.name}"
+  score = rand(10..80)
+
+  (Date.today - 10.days..Date.today).each do |date|
+    newscore = score + rand(-3..3)
+    newscore = [newscore, 0].max
+    newscore = [newscore, 100].min
+    score = newscore
+
+    test = Test.create!(
+      status: :completed,
+      user: user,
+      score: score,
+      subject: subject,
+      created_at: date
+    )
+
+    puts "Test Score: #{test.score} Test Subject: #{test.subject.name}"
+  end
 end
 
 # Creates records of questions with question ids
