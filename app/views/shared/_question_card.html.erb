@@ -3,7 +3,7 @@
     <div class="question-wrapper mb-5 p-3 col-8">
       <div class="container">
           <div class="question-card p-3 text-size mb-3">
-            <%= question.question_content.gsub(/\n/, '<br />').html_safe %>
+            <p> <%= question_number %>. <%= question.question_content.gsub(/\n/, '<br />').html_safe %></p>
           </div>
 
         <%= form.input :question_id, as: :hidden %>

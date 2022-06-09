@@ -16,10 +16,12 @@ export default class extends Controller {
     let numbers = ["a) ", "b) ", "c) ", "d) "];
     let labels = document.querySelectorAll("label") || document.querySelectorAll("li");
 
+    console.log('I am here');
+
     labels.forEach((label) => {
       let index_option = Array.prototype.indexOf.call(labels, label);
 
-      if(index_option <= 3) {
+      if (index_option <= 3) {
         let number = numbers[index_option]
         label.innerHTML = number +  label.innerHTML
       } else if(index_option <= 7) {
@@ -32,9 +34,6 @@ export default class extends Controller {
         let number = numbers[index_option - 4*3]
         label.innerHTML = number +  label.innerHTML
       }
-
-
-
     });
   }
 }

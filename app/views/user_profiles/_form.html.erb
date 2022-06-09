@@ -12,7 +12,7 @@
         <%= f.input :optional_subject, label_html: { class: "white-label" }, placeholder: "📚 Please select your optional subject.", collection: Subject.all %>
         <%= f.input :photo, as: :file, label_html: { class: "white-label" }, placeholder: "📷 Please upload your profile pic." %>
         <div class="d-flex justify-content-center">
-          <%= f.button :submit, "Create User Profile", class: " btn btn-black btn-main" %>
+          <%= f.button :submit, class: "btn btn-black btn-main text-capitalize" %>
         </div>
       <% end %>
     </div>
