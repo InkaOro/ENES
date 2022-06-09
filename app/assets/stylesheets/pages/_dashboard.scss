@@ -60,8 +60,6 @@
   }
 }
 
-
-
 .white-label {
   color: white;
 }
@@ -99,9 +97,25 @@ border-style: solid;
 border-width: 1px;
 // how do we set border-color dynamic to a darker version of the color that gets pulled from the db?
 border-color: black;
+background-color: lightcoral;
+color: white;
 text-align: justify;
 }
 
+.card-test-empty {
+  // rounded card borders
+  border-radius: 5px;
+  // border shadow so it looks a bit bevelled
+  box-shadow: 3px 3px 10px lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: lightcoral;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  }
 
 .card-profile {
   color: white;
