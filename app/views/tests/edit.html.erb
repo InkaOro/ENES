@@ -1,7 +1,13 @@
 <h1 class="text-center mb-5">ENES Test</h1>
 
   <% if @test.errors.any? %>
-    <p class="text-danger"> Please ensure you have answered all questions. </p>
+  <div class="row justify-content-center">
+    <div class="col-8  ">
+      <div class="error-msg text-center">
+        <p> Please ensure you have answered all questions.</p>
+      </div>
+    </div>
+  </div>
   <% end %>
 
   <%= simple_form_for @test do |f| %>
