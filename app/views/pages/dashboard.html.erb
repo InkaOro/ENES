@@ -6,17 +6,17 @@
     <div class="col-3">
       <div class="d-flex card-profile justify-content-center my-4 p-3" style="width: 100%">
         <div class="text-center" >
-            <% if @user_profile.photo.attached? %>
-              <%= cl_image_tag(@user_profile.photo.key, :transformation=>[
+            <% if current_user.user_profile.photo.attached? %>
+              <%= cl_image_tag(current_user.user_profile.photo.key, :transformation=>[
                               {:gravity=>"face", :height=>200, :width=>200, :crop=>"fill"}
                               ], class: "img-profile border border-2 border-secondary") %>
             <% else %>
               <%= image_tag "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg", class: "avatar-square" %>
             <% end %>
 
-          <h3 class="my-3">Hi <%= @user_profile.first_name  %>!</h3>
-          <p class="mb-2"><%= @user_profile.school_name %> </p>
-          <p class="mb-10"><%= @user_profile.school_year %> </p>
+          <h3 class="my-3">Hi <%= current_user.user_profile.first_name  %>!</h3>
+          <p class="mb-2"><%= current_user.user_profile.school_name %> </p>
+          <p class="mb-10"><%= current_user.user_profile.school_year %> </p>
         <%= link_to "Edit Profile" , user_profiles_edit_path, class: "btn-main btn-small" %>
         </div>
       </div>
