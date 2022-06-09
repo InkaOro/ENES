@@ -45,7 +45,7 @@
       <h3 class="my-2 white-title">My Test History</h2>
       <div>
         <% if current_user.tests.completed.empty? %>
-          <div class="card-test-empty py-2">
+          <div class="card-test-empty py-2  ">
             <%= "You have not completed any tests yet. 😔" %>
             <br>
             <br>
@@ -71,7 +71,7 @@
             <%= "Have a go and you'll see your results here!" %>
           </div>
         <% else %>
-          <div>
+          <div class="card">
             <%= line_chart current_user.test_subjects.map { |subject|
               {
                 name: subject.name,
