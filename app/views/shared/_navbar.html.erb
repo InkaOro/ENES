@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
   <div class="container-fluid">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "Magello-Logo.png" %>
+      <%= image_tag "image.png" %>
     <% end %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
             <%= link_to "Messages", "#", class: "nav-link" %>
           <%# </li> %>
           <li class="nav-item dropdown">
-            <% if current_user.user_profile.photo.attached? %>
+            <% if !current_user.user_profile.nil? && current_user.user_profile.photo.attached? %>
               <%= cl_image_tag(current_user.user_profile.photo.key, :transformation=>[
                               {:gravity=>"face", :height=>50, :width=>50, :crop=>"fill"}
                               ], class: "img-profile border border-2 border-secondary", data: { bs_toggle: "dropdown" }) %>
