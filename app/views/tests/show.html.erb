@@ -1,23 +1,23 @@
-<%= if @test.score >= 75%>
-  <h1 class="text-center mb-5">Congratulations!</h1>
-<%= else @test.score < 75 && @test.score > 50 %>
-  <h1 class="text-center mb-5">Nice try!</h1>
-<%= else @test.score <= 50%>
+<% if @test.score >= 75 %>
+  <h2 class="text-center mb-5">Congratulations! 😊</h2>
+<% elsif @test.score < 75 && @test.score > 50 %>
+  <h2 class="text-center mb-5">Nice try!</h2>
+<% elsif @test.score <= 50%>
   <h1 class="text-center mb-5">Uh oh...😕</h1>
-<%= end %>
+<% end %>
 
 <h2 class="text-center mb-5">
   You got <%= @test.correct_answers %> out of
   <%= @test.test_questions.count %> questions correct for a final score of <%= @test.score %>%.
 </h2>
 
-<%= if @test.score >= 75%>
-  <h1 class="text-center mb-5">Great job! Keep going! </h1>
-<%= else @test.score < 75 && @test.score > 50 %>
-  <h1 class="text-center mb-5">Plenty of room for improvement! Keep going!</h1>
-<%= else @test.score <= 50%>
-  <h1 class="text-center mb-5">Not a great result - time to do another test!</h1>
-<%= end %>
+<% if @test.score >= 75%>
+  <h2 class="text-center mb-5">Great job! Keep going! </h2>
+<% elsif @test.score < 75 && @test.score > 50 %>
+  <h2 class="text-center mb-5">Plenty of room for improvement! Keep going!</h2>
+<% elsif @test.score <= 50%>
+  <h2 class="text-center mb-5">Not a great result - time to do another test!</h2>
+<% end %>
 
 <div class="result-answer">
   <%= render 'shared/results_card', test_answers: @test.test_answers %>

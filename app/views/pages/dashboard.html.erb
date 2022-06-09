@@ -52,7 +52,7 @@
             <%= "Have a go and you'll see your results here!" %>
           </div>
         <% else %>
-          <% current_user.tests.completed.each do |test| %>
+          <% current_user.tests.completed.order(created_at: :desc).each do |test| %>
             <%= render 'shared/test_card', test: test %>
           <% end %>
         <% end %>
