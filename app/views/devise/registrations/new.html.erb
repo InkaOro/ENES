@@ -1,9 +1,9 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-4 col-xs-12 col-sm-4 col-sm-offset-4">
-      <div class="form-login">
+      <div class="form-login form-control form-control-profile">
 
-          <h4>Sign up</h4>
+          <h3>Sign up</h3>
 
           <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
             <%= f.error_notification %>
@@ -12,19 +12,22 @@
               <%= f.input :email,
                           required: true,
                           autofocus: true,
+                          label_html: { class: "white-label" },
                           input_html: { autocomplete: "email" }%>
               <%= f.input :password,
                           required: true,
                           hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                          label_html: { class: "white-label" },
                           input_html: { autocomplete: "new-password" } %>
               <%= f.input :password_confirmation,
                           required: true,
+                          label_html: { class: "white-label" },
                           input_html: { autocomplete: "new-password" } %>
             </div>
 
             <div class="form-actions">
 
-              <%= f.button :submit, "Sign up", class: "btn-main" %>
+              <%= f.button :submit, "Sign up", class: "btn btn-black btn-main text-capitalize" %>
 
             </div>
           <% end %>
