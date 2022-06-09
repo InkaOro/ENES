@@ -6,27 +6,23 @@ export const initButtonBar = () => {
 
   function getOffset(el) {
     const rect = el.getBoundingClientRect();
-    return {
-      left: rect.left + window.scrollX,
-      top: rect.top + window.scrollY
-    };
+    return rect.top;
   }
 
   const checkOffset = () => {
     console.log(getOffset(bar).top + bar.clientHeight >= getOffset(footer).top);
 
-    if (getOffset(bar).top + bar.clientHeight >= getOffset(footer).top) {
-      console.log('STOP!!!!');
-      bar.style.left = 0;
+    if ((getOffset(bar) + document.body.scrollTop) + bar.offsetHeight >= (getOffset(footer) + document.body.scrollTop)) {
       bar.style.position = 'absolute';
-    } else {
-      console.log('NICE');
-      bar.style.position = 'fixed';
+      bar.classList.remove('fixed-bottom');
+      bar.classList.add('absolute');
     }
 
-    // if (window.scrollY + window.innerHeight < footer.offsetTop) {
-    //   bar.style.position = 'fixed';
-    // }
+    if (document.body.scrollTop + window.innerHeight < (getOffset(footer) + document.body.scrollTop)) {
+      bar.style.position = 'fixed';
+      bar.classList.add('fixed-bottom');
+      bar.classList.remove('absolute');
+    }
   }
 
   document.addEventListener('scroll', () => {

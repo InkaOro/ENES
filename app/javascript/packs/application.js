@@ -18,5 +18,5 @@ import "chartkick/chart.js"
 import { initButtonBar } from "../components/bottom_button_bar";
 
 document.addEventListener('DOMContentLoaded', () => {
-  // initButtonBar();
+  initButtonBar();
 })
