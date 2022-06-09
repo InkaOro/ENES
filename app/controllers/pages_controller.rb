@@ -6,7 +6,6 @@ class PagesController < ApplicationController
 
   def dashboard
     @user_profile = current_user.user_profile
-
     @quote = motivational_quote
   end
 
