@@ -4,8 +4,8 @@
     <p class="text-danger"> Please ensure you have answered all questions. </p>
   <% end %>
 
-  <div data-controller="numbered-answers">
-    <%= simple_form_for @test do |f| %>
+  <%= simple_form_for @test do |f| %>
+    <div data-controller="numbered-answers">
       <% @test.questions.each_with_index do |question, index| %>
         <%= f.simple_fields_for :test_answers, @test.test_answers.find {  |ta| ta.question == question } || @test.test_answers.new(question: question) do |taf| %>
           <%= render 'shared/question_card',
@@ -13,15 +13,20 @@
             question_number: index + 1,
             form: taf
           %>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
-
-  <div class="container btn-fixing col-10 d-flex justify-content-between fixed-bottom">
-    <div class="">
-      <%= link_to "Cancel Test", dashboard_path, class: "btn btn-main" %>
     </div>
 
-    <%= f.submit 'Submit Test', class: "btn btn-main" %>
-  </div>
+    <div class="bottom-button-bar">
+      <div class="container m-auto">
+        <div class="row justify-content-center pb-3 pt-3">
+          <div class="col-8">
+            <div class="d-flex justify-content-between">
+              <%= link_to "Cancel Test", dashboard_path, class: "btn btn-main" %>
+              <%= f.submit 'Submit Test', class: "btn btn-second" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 <% end %>

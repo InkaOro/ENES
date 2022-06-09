@@ -14,5 +14,9 @@ ActiveStorage.start()
 
 import "controllers"
 import "bootstrap"
-
 import "chartkick/chart.js"
+import { initButtonBar } from "../components/bottom_button_bar";
+
+document.addEventListener('DOMContentLoaded', () => {
+  // initButtonBar();
+})
