@@ -59,10 +59,10 @@ PROFILE_SUBJECTS.each do |name|
   subject = Subject.find_by(name: name)
   user.subjects << subject
 
-  score = rand(10..80)
+  score = rand(25..65)
 
   (Date.today - 10.days..Date.today).each do |date|
-    newscore = score + rand(-3..3)
+    newscore = score + rand(-1..4)
     newscore = [newscore, 0].max
     newscore = [newscore, 100].min
     score = newscore
