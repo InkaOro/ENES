@@ -1,9 +1,10 @@
 <h1 class="text-center mb-5">ENES Test</h1>
 
   <% if @test.errors.any? %>
-  <div class="row justify-content-center">
-    <div class="col-8  ">
+  <div class="row justify-content-center error-msg">
+    <div class="col-6">
       <div class="error-msg text-center">
+         <i class="fa fa-solid fa-bomb"></i>
         <p> Please ensure you have answered all questions.</p>
       </div>
     </div>
