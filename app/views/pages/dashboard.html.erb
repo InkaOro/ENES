@@ -63,8 +63,7 @@
       <h3 class="my-2 white-title">My Test Results</h2>
       <div>
         <% if current_user.tests.completed.empty? %>
-          <div class="empty-warning">
-            <br>
+          <div class="card-test-empty py-2">
             <%= "You have not completed any tests yet. 😔" %>
             <br>
             <br>
